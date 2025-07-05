@@ -32,3 +32,4 @@ Team:
 - Honzha Yehor
 - Les Andrii
 - AntonKon97
+- Konstantin Khablo
