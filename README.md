@@ -33,3 +33,4 @@ Team:
 - Les Andrii
 - AntonKon97
 - Konstantin Khablo
+- Mykola Dron
