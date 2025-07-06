@@ -1,0 +1,249 @@
+<section class="available-cars">
+    <!-- New div that contains all the necessary info about this section (available cars, their specs, etc) -->
+    <div class="available-cars__text">
+        <h2 class="available-cars__section-name">AVAILABLE CARS</h2>
+        <h3 class="available-cars__call-to-action">Explore the Top Cars</h3>
+
+        <div class="available-cars__breaking-line">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 4" style="width: 7%; height: auto;">
+                <path d="M0 2 L100 2" fill="none" stroke="#f4581f" stroke-width="4"></path>
+            </svg>
+        </div>
+
+        <p class="available-cars__description">
+            We have various car classes. Select your perfect fit on the map in the UDRIVE app.
+        </p>
+    </div>
+
+    <!-- Div that contains all 6 cards with card and two nav buttons (left and right for further JS implementation) -->
+    <div class="available-cars__options-carousel-full">
+        <!-- Left nav button (Will add JS with time) -->
+        <button class="available-cars__arrow--left" aria-label="Scroll left">
+            <svg class="available-cars__arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+
+        <!-- Container with only cars cards (i decided to distinguish nav buttons and cards themselves) -->
+        <div class="available-cars__options-carousel-cards">
+            <!-- Car 1. Mitsubishi i-MiEV -->
+            <article class="car-card">
+                <img src="img/global/available-cars/available-cars-mitsubishi.png" alt="Mitsubishi i-MiEV"
+                    class="car-card__image" />
+                <p class="car-card__category">Economy</p>
+                <h3 class="car-card__model">Mitsubishi i-MiEV</h3>
+                <div class="car-card__features">
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Automatic Transmission</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Electric</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Air Conditioning</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">5 passengers</div>
+                    </div>
+                </div>
+                <a href="#tarrifs" class="car-card__button">Learn More</a>
+            </article>
+
+            <!-- Car 2. BMW Gran Coupe 2 Series -->
+            <article class="car-card">
+                <img src="img/global/available-cars/available-cars-bmw.png" alt="BMW Gran Coupe 2 Series"
+                    class="car-card__image" />
+                <p class="car-card__category">BUSINESS</p>
+                <h3 class="car-card__model">BMW Gran Coupe 2 Series</h3>
+                <div class="car-card__features">
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Manual Transmission</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Gas</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Air Conditioning</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">4 persons</div>
+                    </div>
+                </div>
+                <a href="#tarrifs" class="car-card__button">Learn More</a>
+            </article>
+
+            <!-- Car 3. Alfa Romeo Giulia -->
+            <article class="car-card">
+                <img src="img/global/available-cars/available-cars-alfaromeo.png" alt="Alfa Romeo Giulia"
+                    class="car-card__image" />
+                <p class="car-card__category">COMFORT</p>
+                <h3 class="car-card__model">Alfa Romeo Giulia</h3>
+                <div class="car-card__features">
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Manual Transmission</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Gas</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Air Conditioning</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">4 persons</div>
+                    </div>
+                </div>
+                <a href="#tarrifs" class="car-card__button">Learn More</a>
+            </article>
+
+            <!-- Car 4. 2021 Honda CR-V -->
+            <article class="car-card">
+                <img src="img/global/available-cars/available-cars-honda.png" alt="2021 Honda CR-V"
+                    class="car-card__image" />
+                <p class="car-card__category">ECONOMY</p>
+                <h3 class="car-card__model">2021 Honda CR-V</h3>
+                <div class="car-card__features">
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Automatic Transmission</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Hybrid Fuel</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Air Conditioning</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">5 passengers</div>
+                    </div>
+                </div>
+                <a href="#tarrifs" class="car-card__button">Learn More</a>
+            </article>
+
+            <!-- Car 5. Jaguar C-X17 Sports -->
+            <article class="car-card">
+                <img src="img/global/available-cars/available-cars-jaguar.png" alt="Jaguar C-X17 Sports"
+                    class="car-card__image" />
+                <p class="car-card__category">COMFORT</p>
+                <h3 class="car-card__model">Jaguar C-X17 Sports</h3>
+                <div class="car-card__features">
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Automatic Transmission</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Gas</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Air Conditioning</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">5 passengers</div>
+                    </div>
+                </div>
+                <a href="#tarrifs" class="car-card__button">Learn More</a>
+            </article>
+
+            <!-- Car 6. Toyota Yaris -->
+            <article class="car-card">
+                <img src="img/global/available-cars/available-cars-toyota.png" alt="Toyota Yaris"
+                    class="car-card__image" />
+                <p class="car-card__category">ECONOMY</p>
+                <h3 class="car-card__model">Toyota Yaris</h3>
+                <div class="car-card__features">
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Manual Transmission</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Gas</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">Air Conditioning</div>
+                    </div>
+                    <div class="car-card__feature">
+                        <div class="car-card__feature-checkmark"><img
+                                src="img/global/available-cars/available-cars-checkmark-icon.svg"
+                                alt="checkmark-icon" /></div>
+                        <div class="car-card__feature-text">4 passengers</div>
+                    </div>
+                </div>
+                <a href="#tarrifs" class="car-card__button">Learn More</a>
+            </article>
+        </div>
+        
+        <!-- Left nav button (JS with time will be added) -->
+        <button class="available-cars__arrow--right" aria-label="Scroll right">
+            <svg class="available-cars__arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+</section>
