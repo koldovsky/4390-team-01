@@ -36,3 +36,4 @@ Team:
 - Mykola Dron
 - Tetiana Kulakova
 - Nazar Shvets
+- Nazar Hrechka
