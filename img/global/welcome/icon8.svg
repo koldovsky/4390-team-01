@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>check copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FA5E1D" offset="0%"></stop>
+            <stop stop-color="#F67F2A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="check-copy" transform="translate(3.000000, 3.000000)">
+            <circle id="Oval" stroke="#F1621B" stroke-width="3" fill="url(#linearGradient-1)" cx="10" cy="10" r="11.5"></circle>
+            <g id="check-mark" transform="translate(5.000000, 6.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <path d="M4.97925647,7.63512562 C4.48053653,8.12162479 3.6713201,8.12162479 3.17284086,7.63512562 L0.374039955,4.90490726 C-0.124679985,4.41864287 -0.124679985,3.62925569 0.374039955,3.14299131 C0.872519201,2.65649213 1.68173563,2.65649213 2.18045557,3.14299131 L3.8479902,4.76942944 C3.97387366,4.89199343 4.17822367,4.89199343 4.30434783,4.76942944 L8.81954443,0.364874384 C9.31802368,-0.121624795 10.1272401,-0.121624795 10.62596,0.364874384 C10.8654515,0.5984973 11,0.915473116 11,1.24583236 C11,1.57619159 10.8654515,1.89316741 10.62596,2.12679033 L4.97925647,7.63512562 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
