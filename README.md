@@ -37,3 +37,4 @@ Team:
 - Tetiana Kulakova
 - Nazar Shvets
 - Nazar Hrechka
+- Denys Bondar
