@@ -35,3 +35,7 @@ Team:
 - Konstantin Khablo
 - Mykola Dron
 - Tetiana Kulakova
+- Nazar Shvets
+- Nazar Hrechka
+- Fedir Komarovskyi
+- Denys Bondar
