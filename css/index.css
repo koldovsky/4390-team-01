@@ -1,13 +1,12 @@
-<<<<<<< HEAD
+
 @import url(global.css);
 @import url(header.css);
 @import url(footer.css);
-=======
-@import "index.available-cars.css";
+@import url(index.available-cars.css);
 
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
->>>>>>> 7cc79ef1b0a96fb577171b4abc57e6c3735ac93e
+
