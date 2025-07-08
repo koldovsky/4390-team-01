@@ -13,6 +13,9 @@
   text-align: center;
   padding: 100px 0;
 }
+.clients__box{
+  position: relative;
+}
 
 .clients__title {
   font-family: "Nunito", sans-serif;
@@ -80,8 +83,8 @@
   cursor: pointer;
 }
 .clients__arrow.left {
-  left: 350px;
+  left: 25px;
 }
 .clients__arrow.right {
-  right: 350px;
+  right: 25px;
 }
