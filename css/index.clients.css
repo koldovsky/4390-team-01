@@ -39,18 +39,17 @@
 }
 .clients__slider-item {
   width: 800px;
-  position: absolute;
+  margin-bottom: 20px;
+  /* position: absolute;
   top: 0;
   left: 50%;
   transform: translatex(-50%);
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease; */
 }
-
-.clients__slider-item.active {
+/* .clients__slider-item.active {
   opacity: 1;
-}
-
+} */
 .clients__img {
   display: inline-block;
   width: 120px;
