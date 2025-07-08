@@ -39,3 +39,4 @@ Team:
 - Nazar Hrechka
 - Fedir Komarovskyi
 - Denys Bondar
+- Oleksandra Fastova
