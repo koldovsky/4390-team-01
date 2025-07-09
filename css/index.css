@@ -5,14 +5,3 @@
 @import url(index.available-cars.css);
 @import url(index.how-it-works.css);
 @import url(index.welcome-to-udrive.css);
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    scroll-behavior: smooth;
-}
