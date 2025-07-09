@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,6 +14,7 @@
   </head>
   <body>
     <header class="header">
+      <!--Andrii Deineka-->
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -22,13 +23,6 @@
     </header>
 
     <main class="main">
-      <!--Denys Bondar-->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.header-hero.partial.html"
-      ></section>
-      
       <!--AntonKon97-->
       <section
         data-hx-trigger="load"
@@ -40,7 +34,7 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="global.welcome-to-udrive.partial.html"
+        data-hx-get="index.welcome-to-udrive.partial.html"
       ></section>
 
       <!--Honzha Yehor-->
@@ -48,6 +42,13 @@
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.available-cars.partial.html"
+      ></section>
+
+      <!-- Oleksandra Fastova - Download -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.download.partial.html"
       ></section>
 
       <!--Les Andrii-->
@@ -87,15 +88,12 @@
       ></section>
       <!--FAQ section end-->
     </main>
-     
-    <footer class="footer">
-      <nav
+
+    <footer 
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="global.footer.partial.html"
-      ></nav>
+        data-hx-get="global.footer.partial.html">
     </footer>
-     <!-- Hrechka Nazar footer -->
-      
+    <!-- Hrechka Nazar footer -->
   </body>
 </html>

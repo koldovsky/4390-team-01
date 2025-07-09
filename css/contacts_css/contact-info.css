@@ -1,0 +1,46 @@
+.contact-information 
+{
+  .contact-information__intro 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contact-information__title 
+    {
+      font-size: 0.75rem;
+      color: #6748cd;
+    }
+
+    .contact-information__subtitle 
+    {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    .contact-information__description 
+    {
+      font-size: 1rem;
+      color: #a8a8a8;
+    }
+  }
+
+  .contact-information__list
+  {
+    .contact-information__item
+    {
+      .contact-information__icon
+      {
+        background: linear-gradient( rgba(108,108,108,0.2), rgba(108,108,108,0.2));
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:#6748cd
+      }
+    }
+  }
+}
