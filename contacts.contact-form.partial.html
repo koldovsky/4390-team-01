@@ -1,4 +1,4 @@
-<section class = "contact-form">
+<section class="contact-form">
   <h2 class="contact-form__title">Get in touch</h2>
   <p class="contact-form__description">Please fill out this form</p>
 
@@ -7,41 +7,64 @@
       <div class="contact-form__field">
         <label class="contact-form__label" for="first-name">First name *</label>
         <input
-        class="contact-form__input" 
-        type="text"
-        id="first-name"
-        name="first-name"
-        placeholder="First name"
-        required
-        >
+          class="contact-form__input"
+          type="text"
+          id="first-name"
+          name="first-name"
+          placeholder="First name"
+          required
+        />
       </div>
     </div>
 
     <div class="contact-form__field">
-        <label class="contact-form__label" for="last-name">Last name *</label>
-        <input
-        class="contact-form__input" 
+      <label class="contact-form__label" for="last-name">Last name *</label>
+      <input
+        class="contact-form__input"
         type="text"
         id="last-name"
         name="last-name"
         placeholder="Last name"
-        required>
+        required
+      />
     </div>
 
     <div class="contact-form__field">
       <label class="contact-form__label" for="email">Email *</label>
       <input
-      class="contact-form__input" 
-      type="email"
-      id="email"
-      name="email"
-      placeholder="you@company.com"
-      required>
+        class="contact-form__input"
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@company.com"
+        required
+      />
     </div>
 
-    <!-- Part for Nazar -->
+    <div class="contact-form__field">
+      <label class="contact-form__label" for="message">Message *</label>
+      <textarea
+        class="contact-form__textarea"
+        id="message"
+        name="message"
+        placeholder="Leave us a message..."
+        required
+      ></textarea>
+    </div>
 
-    <!-- End of the part for Nazar -->
+    <div class="contact-form__checkbox">
+      <input
+        class="contact-form__checkbox-input"
+        type="checkbox"
+        id="agree"
+        name="agree"
+        required
+      />
+      <label class="contact-form__checkbox-label" for="agree">
+        You agree to our friendly <a href="#">privacy policy</a>.
+      </label>
+    </div>
+
     <button class="contact-form__button" type="submit">Send message</button>
   </form>
 </section>
