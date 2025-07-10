@@ -1,5 +1,6 @@
 .contact-information 
 {
+  font-family: "Nunito", sans-serif;
   .contact-information__intro 
   {
     display: flex;
@@ -10,18 +11,19 @@
     {
       font-size: 0.9rem;
       color: var(--action-color__contacts);
+      margin-top: 0.5rem;
     }
 
     .contact-information__subtitle 
     {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       font-weight: bold;
       margin: 0.5rem 0;
     }
 
     .contact-information__description 
     {
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: var(--description-color__contacts);
     }
   }
