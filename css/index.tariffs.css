@@ -1,5 +1,68 @@
 .tariffs {
-  background: url("../img/tariffs/background.png") no-repeat center / cover;
-  color: white;
-}
+  background: url("../img/tariffs/background.png") no-repeat center / cover; /*встановдюю фоном чорну картинку*/
+  padding: 0 24px;
 
+  color: white;
+  .tariffs__container {
+    .tariffs__upper-part {
+      display: flex;
+      flex-direction: column;
+      
+      .tariffs__title {
+        font-size: 11px;
+      }
+      .tariffs__subtitle {
+        font-size: 34px;
+      }
+      .tariffs__divider {
+      }
+      .tariffs__subtitle-second {
+      }
+    }
+    .tariffs__class {
+      .tariffs__group {
+        .tariffs__group-title {
+          .tariffs__group-link {
+            color: white; /* текст білий */
+            text-decoration: none; /* прибирає підкреслення */
+          }
+
+          .tariffs__group-link:hover {
+            text-decoration: underline; /* додає підкреслення при наведенні */
+          }
+        }
+      }
+
+      display: flex;
+      flex-direction: column;
+
+      .tariffs__plans {
+        .tariffs__card {
+          .tariffs__type {
+            font-size: 17px;
+          }
+          .tariffs__price {
+            font-size: 2rem;
+          }
+          .tariffs__description {
+            font-size: 17px;
+          }
+          .tariffs__divider {
+          }
+          .tariffs__select {
+            font-size: 17px;
+          }
+
+          background: url("../img/tariffs/orange-fon.jpg") no-repeat center /
+            cover; /*встановдюю фоном оранжеву картинку*/
+          border-radius: 15px; /*Заокруглення*/
+        }
+
+        .tariffs__group-link {
+          color: var(--tafiffs-text-color);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
