@@ -1,5 +1,6 @@
 <section class="tariffs">
   <div class="tariffs__container">
+    <div class="tariffs__upper-part">
     <h2 class="tariffs__title">Tariffs</h2>
     <p class="tariffs__subtitle">
       <b>Most Flexible Payment Plans</b>
@@ -14,14 +15,15 @@
         style="fill: none; stroke: #f4581f; stroke-width: 4px"
       ></path>
     </svg>
-    <p>We have developed three types of plans for your flexibility.</p>
+    <p class="tariffs__subtitle-second">We have developed three types of plans for your flexibility.</p>
+</div>
     <!--Econom Class-->
-    <div class="tariffs__group ">
+    <div class="tariffs__group " data-class="economy">
       <h3 class="tariffs__group-title">
         <a href="#" class="tariffs__group-link">Economy Class</a>
       </h3>
       <div class="tariffs__plans">
-        <article class="tariffs__card">
+        <article class="tariffs__card tariffs__card--economy">
           <h4 class="tariffs__type">Basic</h4>
           <p class="tariffs__price"><strong>$1</strong>/min</p>
           <p class="tariffs__description">
@@ -48,9 +50,9 @@
         </article>
 
         <article class="tariffs__card">
-          <h4 class="tariffs-class__type">Smart</h4>
-          <p class="tariffs-class__price"><strong>$12</strong>/hour</p>
-          <p class="tariffs-class__desc">For everyday rides of any distance.</p>
+          <h4 class="tariffs__type">Smart</h4>
+          <p class="tariffs__price"><strong>$12</strong>/hour</p>
+          <p class="tariffs__desc">For everyday rides of any distance.</p>
           <svg
             class="tariffs__divider"
             xmlns="http://www.w3.org/2000/svg"
@@ -97,12 +99,12 @@
       </div>
     </div>
 <!--Bisness Class-->
-    <div class="tariffs-group">
-      <h3 class="tariffs-group__title">
-        <a href="#" class="tariffs-group__link">Business Class</a>
+    <div class="tariffs__group" data-class="business">
+      <h3 class="tariffs__group-title">
+        <a href="#" class="tariffs__group-link">Business Class</a>
       </h3>
       <div class="tariffs__plans">
-        <article class="tariffs__card">
+        <article class="tariffs__card tariffs__card--business">
           <h4 class="tariffs__type">Basic</h4>
           <p class="tariffs__price"><strong>$3</strong>/min</p>
           <p class="tariffs__desc">
@@ -176,12 +178,12 @@
     </div>
 
     <!--Comfort Class-->
-    <div class="tariffs-group">
-      <h3 class="tariffs-group__title">
-        <a href="#" class="tariffs-group__link">Comfort Class</a>
+    <div class="tariffs__group" data-class="comfort">
+      <h3 class="tariffs__group-title">
+        <a href="#" class="tariffs__group-link">Comfort Class</a>
       </h3>
       <div class="tariffs__plans">
-        <article class="tariffs__card">
+        <article class="tariffs__card tariffs__card--comfort">
           <h4 class="tariffs__type">Basic</h4>
           <p class="tariffs__price"><strong>$3</strong>/min</p>
           <p class="tariffs__desc">
