@@ -1,0 +1,13 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --description-color__contacts: #a8a8a8;
+    --action-color__contacts: #6748cd;
+    font-family: "Nunito", sans-serif;
+}
