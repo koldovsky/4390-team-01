@@ -10,5 +10,7 @@
 }
 
 :root {
+    --description-color__contacts: #a8a8a8;
+    --action-color__contacts: #6748cd;
     scroll-behavior: smooth;
 }

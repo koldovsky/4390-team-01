@@ -1,17 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:...&display=swap');
-
+@import url(../global.css);
 @import url(contact-info.css);
 @import url(contact-form.css);
-
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root 
-{
-    font-family: "Lato", sans-serif;
-}

@@ -8,20 +8,21 @@
 
     .contact-information__title 
     {
-      font-size: 0.75rem;
-      color: #6748cd;
+      font-size: 0.9rem;
+      color: var(--action-color__contacts);
     }
 
     .contact-information__subtitle 
     {
       font-size: 1.6rem;
       font-weight: bold;
+      margin: 0.5rem 0;
     }
 
     .contact-information__description 
     {
       font-size: 1rem;
-      color: #a8a8a8;
+      color: var(--description-color__contacts);
     }
   }
 
@@ -29,17 +30,47 @@
   {
     .contact-information__item
     {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
       .contact-information__icon
       {
         background: linear-gradient( rgba(108,108,108,0.2), rgba(108,108,108,0.2));
         width: 40px;
         height: 40px;
         border-radius: 50%;
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
 
         display: flex;
         align-items: center;
         justify-content: center;
-        color:#6748cd
+        color: var(--action-color__contacts);
+      }
+
+      .contact-information__content
+      {
+        text-align: center;
+        .contact-information__title
+        {
+          font-size: 1rem;
+        }
+
+        .contact-information__description
+        {
+          font-size: 0.75rem;
+          color: var(--description-color__contacts);
+          margin: 0.25rem
+        }
+
+        .contact-information__link
+        {
+          font-size: 1rem;
+          color: var(--action-color__contacts);
+          text-decoration: none;
+        }
       }
     }
   }
