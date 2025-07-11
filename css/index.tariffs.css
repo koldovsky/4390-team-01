@@ -1,5 +1,5 @@
 .tariffs {
-  background: url("../img/tariffs/background.png") no-repeat center / cover; /*встановдюю фоном чорну картинку*/
+    background: url("../img/tariffs/background.png") no-repeat center / cover; /*встановдюю фоном чорну картинку*/
   padding: 0 24px;
 
   color: white;
@@ -28,6 +28,7 @@
           .tariffs__group-link {
             color: var(--tafiffs-text-color);
             text-decoration: none;
+            padding: 15px 20px;
           }
           &:hover {
             text-decoration: underline; /* додає підкреслення при наведенні */
@@ -70,7 +71,9 @@
         padding: 20px; /*відступи*/
         background: url(../img/tariffs/orange-fon.jpg) no-repeat center / cover; /* встановлюю оранжевий фон*/
         border-radius: 15px; /*заокруглення*/
-        gap: 12px; /* відступи між елементами */
+        background-position: 50% 18%;
+        gap: 20px; /* відступи між елементами */
+        box-sizing: border-box;
 
         .tariffs__type {
           font-size: 1rem;
@@ -80,6 +83,7 @@
           font-size: 2rem;
           font-weight: bold;
           margin: 8px 0;
+          
         }
         .tariffs__description {
           font-size: 1rem;
@@ -106,20 +110,12 @@
         }
         .tariffs__select {
           font-size: 17px;
-          margin-top: auto;
-          align-self: flex-start;
-          background: #fff;
-          color: #f4581f;
-          border: none;
-          border-radius: 8px;
-          padding: 10px 20px;
+          color:var(--tafiffs-text-color);
           font-weight: bold;
-          cursor: pointer;
-          transition: background 0.3s;
-
-          &:hover {
-            background: #f1f1f1;
-          }
+          background: none; /* прибирає фон */
+          border: none; /* прибирає рамки */
+          padding: 0; /* прибирає відступи */
+          cursor: pointer; /* залишає курсор pointer */
         }
       }
     }
