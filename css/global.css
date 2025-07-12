@@ -11,4 +11,5 @@
 
 :root {
     scroll-behavior: smooth;
+    --tariffs-text-color: white;
 }

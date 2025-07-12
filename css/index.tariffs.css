@@ -1,0 +1,116 @@
+.tariffs {
+    background: url("../img/tariffs/background.png") no-repeat center / cover; /*встановдюю фоном чорну картинку*/
+  padding: 0 24px;
+
+  color: white;
+  .tariffs__container {
+    .tariffs__upper-part {
+      display: flex;
+      flex-direction: column;/*розташування колонкою*/
+      align-items: center;/*по центру*/
+
+      .tariffs__title {
+        font-size: 11px;
+      }
+      .tariffs__subtitle {
+        font-size: 34px;
+      }
+      
+    }
+    .tariffs__class {
+      .tariffs__group {
+        .tariffs__group-title {
+          display: inline;/*розмір контейнера в розмір контексту*/
+          .tariffs__group-link {
+            color: var(--tariffs-text-color);/*використання змінної яка містить білий текст*/
+            text-decoration: none;/*прибрати підкреслння*/
+            padding: 15px 20px;/*відступи*/
+            
+          }
+          &:hover {
+            text-decoration: underline; /* додає підкреслення при наведенні */
+            
+          }
+        }
+      }
+
+      @media (min-width: 478px) {
+        flex-direction: row;/*робити в рядок*/
+        justify-content: space-around;/*однаковий відступ навколо елемента*/
+      }
+
+      .tariffs__plans {
+        display: grid;/*створюємо гріт-контейнер*/
+
+        grid-template-columns: repeat(1, 1fr); /*одна картка коли малий екран( одна колонка адна частина вільного простору */
+        gap: 24px;
+
+        @media (min-width: 478px) {
+          grid-template-columns: repeat(2,1fr); /*дві картки коли середній екран (дві колонки одна частина віьго протору*/
+        }
+        @media (min-width: 990px) {
+          grid-template-columns: repeat(3,1fr); /*три картки коли великий екран (три колонки одна частина доступного простору */
+        }
+      }
+
+      /*two */
+
+      .tariffs__card {
+        display: flex;
+        flex-direction: column; /*  елементи в колонку */
+        justify-content: space-between; /* рівномірно розподілити */
+        align-items: flex-start; /* вирівняти  по початку картки */
+        padding: 20px; /*відступи*/
+        background: url(../img/tariffs/orange-fon.jpg) no-repeat center / cover; /* встановлюю оранжевий фон*/
+        border-radius: 15px; /*заокруглення*/
+        background-position: 50% 18%;
+        gap: 20px; /* відступи між елементами */
+        box-sizing: border-box;
+        height: 100%;
+
+        .tariffs__type {
+          font-size: 1rem;
+          font-weight: bold;
+        }
+        .tariffs__price {
+          font-size: 2rem;
+          font-weight: bold;
+          margin: 8px 0;
+          
+        }
+        .tariffs__description {
+          font-size: 1rem;
+          margin-bottom: 12px;
+        }
+        .tariffs__divider {
+          height: 2px;
+          width: 30px;
+          background: #fff;
+          margin: 10px 0;
+        }
+        .tariffs__features {
+          display: grid;
+          grid-template-columns: auto 1fr; /* Назва + значення */
+          row-gap: 8px;
+          column-gap: 16px;
+          .tariffs__feature {
+            font-size: 0.95rem;
+            font-weight: normal;
+            b {
+              font-weight: bold;
+            }
+          }
+        }
+        .tariffs__select {
+          font-size: 17px;
+          color:var(--tafiffs-text-color);
+          font-weight: bold;
+          background: none; /* прибирає фон */
+          border: none; /* прибирає рамки */
+          padding: 0; /* прибирає відступи */
+          cursor: pointer; /* залишає курсор pointer */
+        }
+      }
+    }
+  }
+}
