@@ -1,6 +1,50 @@
-.how-it-works__icon {
-  border-color: rgb(11, 187, 20);
-  border-width: 10px;
-  border-style: solid;
-  border-radius: 70%;
+.how-it-works {
+  
+  background-color: rgb(255, 255, 255);
+
+  .how-it-works__header {
+    font-size: medium;
+
+    .how-it-works__title {
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      text-decoration-color: rgb(209, 201, 191);
+
+      .how-it-works__separator {
+      width: 30%;
+      }
+
+      .how-it-works__subtitle {
+      text-decoration-color: rgb(20, 20, 20);
+    }
+
+      .how-it-works__description {
+      text-decoration-color: rgb(20, 20, 20);
+    }
+    }
+  }
+  .how-it-works__steps {
+    .how-it-works__step {
+    background-color: rgb(207, 165, 165);
+  }
+
+    .how-it-works__icon {
+      border-color: rgb(11, 187, 20);
+      border-width: 8px;
+      border-style: solid;
+      border-radius: 70%;
+      height: 150px;
+      width: 150px;
+    }
+
+    .how-it-works__step-title {
+    text-decoration-color: rgb(20, 20, 20);
+  }
+
+    .how-it-works__step-text {
+    text-decoration-color: rgb(20, 20, 20);
+  }
+  }
 }
