@@ -1,37 +1,53 @@
 .how-it-works {
-  
+  max-width: 1300px;
   background-color: rgb(255, 255, 255);
 
   .how-it-works__header {
+    text-align: center;
     font-size: medium;
+    font-family: "Nunito Sans", sans-serif;
 
     .how-it-works__title {
       font-size: 30px;
       text-transform: uppercase;
       font-weight: bold;
       text-align: center;
-      text-decoration-color: rgb(209, 201, 191);
+      justify-content: center;
 
       .how-it-works__separator {
-      width: 30%;
+        width: 40%;
       }
 
       .how-it-works__subtitle {
-      text-decoration-color: rgb(20, 20, 20);
-    }
+        font-size: 30px;
+        text-decoration-color: rgb(0, 0, 0);
+      }
 
       .how-it-works__description {
-      text-decoration-color: rgb(20, 20, 20);
-    }
+        font-size: 30px;
+      }
     }
   }
   .how-it-works__steps {
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    display: grid;
+    padding: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
     .how-it-works__step {
-    background-color: rgb(207, 165, 165);
-  }
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+    }
+    .how-it-works__contact {
+      padding: 10px;
+      grid-column: 1 / -1;
+      justify-self: center;
+      background-color: rgb(255, 255, 255);
+    }
 
     .how-it-works__icon {
-      border-color: rgb(11, 187, 20);
+      border-color: rgb(187, 161, 11);
       border-width: 8px;
       border-style: solid;
       border-radius: 70%;
@@ -40,11 +56,11 @@
     }
 
     .how-it-works__step-title {
-    text-decoration-color: rgb(20, 20, 20);
-  }
+      color: rgb(39, 41, 187);
+    }
 
     .how-it-works__step-text {
-    text-decoration-color: rgb(20, 20, 20);
-  }
+      color: rgb(33, 192, 54);
+    }
   }
 }

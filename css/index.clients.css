@@ -1,3 +1,11 @@
+:root {
+  --accent-color: #F4581F;
+  --bace-color: #5d5d5d;
+  --title-color: #333235;
+}
+
+
+
 .clients {
   text-align: center;
   padding: 100px 0;
@@ -9,7 +17,7 @@
     font-size: 19px;
     line-height: 30px;
     font-weight: 400;
-    color: #5d5d5d;
+    color: var(--bace-color);
     position: relative;
     .clients__box {
       
@@ -18,13 +26,13 @@
         font-size: 35px;
         font-weight: 800;
         margin-bottom: 15px;
-        color: #333235;
+        color: var(--title-color);
       }
       .clients__title-span {
         display: inline-block;
         width: 47px;
         height: 5px;
-        background-color: #f4581f;
+        background-color: var(--accent-color);
         margin-bottom: 20px;
       }
       .clients__subtitle {
@@ -54,7 +62,7 @@
             font-family: "Nunito", sans-serif;
             font-size: 25px;
             font-weight: 700;
-            color: #f4581f;
+            color: var(--accent-color);
             margin-bottom: 30px;
           }
           .clients__blockquote {
@@ -66,7 +74,7 @@
         .clients__time {
           font-size: 15px;
           font-weight: 700;
-          color: #333235;
+          color: var(--title-color);
         }
       }
 
