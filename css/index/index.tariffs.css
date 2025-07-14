@@ -1,5 +1,5 @@
 .tariffs {
-  background: url("../img/tariffs/background.png") no-repeat center / cover; /*встановдюю фоном чорну картинку*/
+  background: url("../..//img/tariffs/background.png") no-repeat center / cover; /*встановдюю фоном чорну картинку*/
   padding: 0 24px; /*відступи*/
   color: var(--tariffs-text-color); /*ибілий колір тексту*/
   .tariffs__container {
@@ -65,7 +65,7 @@
         justify-content: space-between; /* рівномірно розподілити */
         align-items: flex-start; /* вирівняти  по початку картки */
         padding: 20px; /*відступи*/
-        background: url(../img/tariffs/orange-fon.jpg) no-repeat center / cover; /* встановлюю оранжевий фон*/
+        background: url(../../img/tariffs/orange-fon.jpg) no-repeat center / cover; /* встановлюю оранжевий фон*/
         border-radius: 15px; /*заокруглення*/
         background-position: 50% 18%;
         gap: 20px; /* відступи між елементами */
