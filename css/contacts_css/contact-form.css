@@ -23,11 +23,6 @@
     flex-direction: column;
     gap: 1.2rem;
 
-    @media(max-width: 600px)
-    {
-      padding: 0 1rem;
-    }
-
     .contact-form__row {
       display: flex;
       gap: 1rem;
@@ -116,5 +111,15 @@
     .form__button:hover {
       background-color: #3b3bcf;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form__form {
+    width: 75%;
+  }
+
+  .contact-form__row {
+    flex-direction: column;
   }
 }
