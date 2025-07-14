@@ -1,0 +1,66 @@
+.how-it-works {
+  max-width: 1300px;
+  background-color: rgb(255, 255, 255);
+
+  .how-it-works__header {
+    text-align: center;
+    font-size: medium;
+    font-family: "Nunito Sans", sans-serif;
+
+    .how-it-works__title {
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      justify-content: center;
+
+      .how-it-works__separator {
+        width: 40%;
+      }
+
+      .how-it-works__subtitle {
+        font-size: 30px;
+        text-decoration-color: rgb(0, 0, 0);
+      }
+
+      .how-it-works__description {
+        font-size: 30px;
+      }
+    }
+  }
+  .how-it-works__steps {
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    display: grid;
+    padding: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    .how-it-works__step {
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+    }
+    .how-it-works__contact {
+      padding: 10px;
+      grid-column: 1 / -1;
+      justify-self: center;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .how-it-works__icon {
+      border-color: rgb(187, 161, 11);
+      border-width: 8px;
+      border-style: solid;
+      border-radius: 70%;
+      height: 150px;
+      width: 150px;
+    }
+
+    .how-it-works__step-title {
+      color: rgb(39, 41, 187);
+    }
+
+    .how-it-works__step-text {
+      color: rgb(33, 192, 54);
+    }
+  }
+}
