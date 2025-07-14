@@ -1,1 +1,13 @@
+.about-udrive__image {
+  flex: 1 1 40%;
+  text-align: center;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain; // або cover для обрізки
+  }
+}
 
