@@ -1,13 +1,193 @@
-.about-udrive__image {
-  flex: 1 1 40%;
-  text-align: center;
-  overflow: hidden;
+.about-udrive {
+  padding: 80px 0;
+  /* background-color: #fff; */
+}
 
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain; 
+.about-udrive__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.about-udrive__image {
+  flex: 1 1 45%;
+}
+
+.about-udrive__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-udrive__content {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-udrive__intro {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #999;
+  font-weight: 600;
+}
+
+.about-udrive__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #222;
+}
+
+.about-udrive__description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-udrive__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-udrive__feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: #333;
+}
+
+.about-udrive__feature-item img {
+  width: 20px;
+  height: 20px;
+}
+
+.about-udrive__text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.about-udrive__stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.about-udrive__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-udrive__stat-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #5e3bea;
+}
+
+.about-udrive__stat-label {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .about-udrive__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-udrive__content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-udrive__stat {
+    align-items: center;
   }
 }
 
+@media (max-width: 768px) {
+  .about-udrive {
+    padding: 48px 16px;
+  }
+
+  .about-udrive__container {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .about-udrive__image {
+    order: 1;
+    width: 100%;
+  }
+
+  .about-udrive__image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about-udrive__content {
+    order: 2;
+    width: 100%;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .about-udrive__title {
+    font-size: 28px;
+  }
+
+  .about-udrive__description,
+  .about-udrive__text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .about-udrive__features {
+    align-items: center;
+  }
+
+  .about-udrive__feature-item {
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .about-udrive__feature-item img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .about-udrive__stats {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .about-udrive__stat-number {
+    font-size: 24px;
+  }
+
+  .about-udrive__stat-label {
+    font-size: 13px;
+  }
+
+  svg {
+    width: 20%;
+  }
+}
