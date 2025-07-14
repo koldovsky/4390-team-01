@@ -7,7 +7,7 @@
     max-width: 100%;
     height: auto;
     display: block;
-    object-fit: contain; // або cover для обрізки
+    object-fit: contain; 
   }
 }
 
