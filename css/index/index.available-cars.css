@@ -1,211 +1,219 @@
 .available-cars {
-    padding: 4rem 1rem;
-    text-align: center;
-    background-color: #ffffff;
-    font-family: "Lato", sans-serif;
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: #ffffff;
+  font-family: "Lato", sans-serif;
 }
 
+/* === Заголовкова частина === */
 .available-cars__grid-wrapper {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    justify-items: center;
-    padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
 }
 
 .available-cars__text {
-    width: 736px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.5rem;
+  width: 736px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
 }
 
 .available-cars__section-name {
-    font-size: 0.688rem;
-    font-weight: 750;
-    text-transform: uppercase;
-    color: #a8a8a8;
-    letter-spacing: 2px;
-    margin: 0;
+  font-size: 0.688rem;
+  font-weight: 750;
+  text-transform: uppercase;
+  color: #a8a8a8;
+  letter-spacing: 2px;
+  margin: 0;
 }
 
 .available-cars__call-to-action {
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 2.625rem;
-    font-weight: 780;
-    color: #333235;
-    margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.625rem;
+  font-weight: 780;
+  color: #333235;
+  margin: 0;
 }
 
 .available-cars__breaking-line {
-    width: 55px;
-    height: 4px;
-    margin: 0.25rem auto;
+  width: 55px;
+  height: 4px;
+  margin: 0.25rem auto;
 }
 
 .available-cars__breaking-line svg {
-    width: 100%;
-    height: 100%;
-    display: block;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .available-cars__description {
-    font-size: 1.188rem;
-    color: #5d5d5d;
-    font-weight: 500;
-    margin: 0;
+  font-size: 1.188rem;
+  color: #5d5d5d;
+  font-weight: 500;
+  margin: 0;
 }
 
-/* Карусель */
 .available-cars__options-carousel-full {
-    max-width: 100%;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 1rem 0;
-    overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem; /* більше падінгу по боках — під стрілки */
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .available-cars__options-carousel-cards {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    gap: 1rem;
-    padding: 1rem 0;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0; /* видалено бічний падінг */
+  width: 100%; /* було calc(100% - 5rem) — ЗАМІНИЛО на повну ширину */
+  box-sizing: border-box;
 }
 
 .available-cars__options-carousel-cards::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-/* Картка авто */
+/* === Картка авто === */
 .car-card {
-    width: 360px;
-    height: 469px;
-    flex-shrink: 0;
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 1.5rem;
-    text-align: left;
-    scroll-snap-align: start;
-    transition: transform 0.3s ease;
-    box-sizing: border-box;
-    box-shadow: none;
+  flex-shrink: 0;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: left;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
 }
 
 .car-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .car-card__image {
-    width: 100%;
-    height: auto;
-    max-height: 180px;
-    object-fit: contain;
-    display: block;
-    margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .car-card__category {
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    color: #999;
-    margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #999;
+  margin-bottom: 0.25rem;
 }
 
 .car-card__model {
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
 }
 
 .car-card__features {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .car-card__feature {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .car-card__feature-checkmark img {
-    width: 16px;
-    height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
 .car-card__feature-text {
-    font-size: 0.95rem;
-    color: #444;
+  font-size: 0.95rem;
+  color: #444;
 }
 
 .car-card__button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #6c47ff;
-    color: #fff;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.2s ease;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #6c47ff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.2s ease;
 }
 
 .car-card__button:hover {
-    background-color: #5432d6;
+  background-color: #5432d6;
 }
 
-/* Стрілки */
+/* === Стрілки === */
 .available-cars__arrow {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.75rem;
-    transition: transform 0.2s ease;
-    z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.2s ease;
 }
 
 .available-cars__arrow:hover {
-    transform: scale(1.1);
+  transform: translateY(-50%) scale(1.05);
 }
 
-.available-cars__arrow-icon {
-    color: #333;
-    font-size: 2rem;
-    user-select: none;
+.available-cars__arrow--left {
+  left: 0.5rem;
 }
 
-/* Адаптивність */
+.available-cars__arrow--right {
+  right: 0.5rem;
+}
+
+
 @media (max-width: 767px) {
-    .car-card {
-        width: 100%;
-    }
+  .car-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
-    .car-card {
-        width: calc(50% - 0.5rem);
-    }
+  .car-card {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 
 @media (min-width: 991px) {
-    .car-card {
-        width: 360px;
-    }
-
-    .available-cars__options-carousel-full {
-        max-width: calc(360px * 3 + 2rem + 6px);
-        margin: 0 auto;
-    }
+  .car-card {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
 }
