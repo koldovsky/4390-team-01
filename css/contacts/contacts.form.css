@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Poppins", sans-serif;
 
   .contact-form__title {
     margin-top: 60px;
@@ -50,12 +51,12 @@
         margin-top: 0.3rem;
 
         &:focus {
-          border-color: #8c8b8b;
+          border-color: var(--description-color__contacts);
           outline: none;
         }
 
         &::placeholder {
-          color: rgba(168, 168, 168, 0.5);
+          color: var(--frame-color__contacts);
         }
       }
 
@@ -99,17 +100,21 @@
 
     .contact-form__button {
       background-color: var(--action-color__contacts);
-      color: white;
+      color: var(--tariffs-text-color);
       padding: 0.8rem 1rem;
       border: none;
       border-radius: 0.5rem;
       font-size: 1rem;
       cursor: pointer;
       margin-bottom: 1rem;
-    }
 
-    .form__button:hover {
-      background-color: #3b3bcf;
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        background-color: #3b3bcf;
+      }
     }
   }
 }

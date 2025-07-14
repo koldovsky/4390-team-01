@@ -1,5 +1,6 @@
 .contact-information {
-  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
+
   .contact-information__intro {
     display: flex;
     flex-direction: column;
@@ -24,7 +25,6 @@
   }
 
   .contact-information__list {
-
     @media (min-width: 833px) {
       display: flex;
       flex-direction: row;
