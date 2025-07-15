@@ -1,8 +1,11 @@
-@import url(global.css);
-@import url(header.css);
-@import url(index.clients.css);
-@import url(footer.css);
-@import url(index.available-cars.css);
-@import url(index.how-it-works.css);
-@import url(index.welcome-to-udrive.css);
+@import url(global/global.css);
+@import url(index/index.header.css);
+@import url(index/index.header-hero.partial.css);
+@import url(index/index.how-it-works.css);
+@import url(index/index.welcome-to-udrive.css);
+@import url(index/index.available-cars.css);
+@import url(index/index.tariffs.css);
+@import url(index/index.clients.css);
+@import url(index/index.discount-timer.css);
+@import url(index/index.footer.css);
 
