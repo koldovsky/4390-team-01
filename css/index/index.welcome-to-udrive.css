@@ -2,15 +2,16 @@
   margin-top: 150px;
   background-image: url("/img/welcome/udrivelogo.png");
   background-position: center;
-  background-size: cover;
+  /* background-size: cover; */
 
   .about-udrive__container {
-    max-width: 280px;
     display: flex;
     .about-udrive__image {
       /* flex: 1; */
     }
     .about-udrive__content {
+      max-width: 280px;
+      max-height: 1232px;
       flex: 1;
       padding-left: 10px;
 
@@ -72,9 +73,8 @@
           .about-udrive__stat-number {
             font-size: 36px;
             font-family: "Nunito Sans", sans-serif;
-            color: #6748CD;
+            color: #6748cd;
             margin-bottom: 40px;
-            
           }
           .about-udrive__stat-label {
             font-size: 14px;
