@@ -6,11 +6,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 
 :root {
     scroll-behavior: smooth;
-    /* max-width: 1200px; */
+    max-width: 1200px;
     margin: auto;
     --tariffs-text-color: white;
     --frame-color__contacts: rgba(168, 168, 168, 0.3);
@@ -20,4 +21,8 @@
     --bace-color: #5d5d5d;
   --title-color: #333235;
 
+}
+img {
+  display: block;
+  max-width: 100%;
 }
