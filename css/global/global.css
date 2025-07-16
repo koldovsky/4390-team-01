@@ -11,30 +11,19 @@
 }
 
 :root {
-  scroll-behavior: smooth;
-  margin: auto;
-  --tariffs-text-color: white;
-  --frame-color__contacts: rgba(168, 168, 168, 0.3);
-  --description-color__contacts: #a8a8a8;
-  --action-color__contacts: #6748cd;
-  --accent-color: #f4581f;
-  --bace-color: #5d5d5d;
+    scroll-behavior: smooth;
+    max-width: 1200px;
+    margin: auto;
+    --tariffs-text-color: white;
+    --frame-color__contacts: rgba(168, 168, 168, 0.3);
+    --description-color__contacts: #a8a8a8;
+    --action-color__contacts: #6748cd;
+    --accent-color: #F4581F;
+    --bace-color: #5d5d5d;
   --title-color: #333235;
 
-  --color-primary: #6748cd;
-  --color-primary-dark: #543bb0;
-  --color-accent: #f4581f;
-
-  --color-text-main: #333;
-  --color-text-light: #555;
-  --color-text-muted: #888;
-
-  --color-bg-light: #f9f9f9;
-
-  --color-border: #ccc;
-  --color-border-active:#3b99fc;
-  --color-white: #fff;
 }
+
 img {
   display: block;
   max-width: 100%;

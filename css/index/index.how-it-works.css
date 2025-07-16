@@ -1,6 +1,5 @@
 .how-it-works {
-  max-width: 1300px;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
 
   .how-it-works__header {
     text-align: center;
@@ -19,11 +18,13 @@
       }
 
       .how-it-works__subtitle {
+        padding: 3px;
         font-size: 30px;
-        text-decoration-color: rgb(0, 0, 0);
+        text-decoration-color: #333;
       }
 
       .how-it-works__description {
+        padding: 3px;
         font-size: 30px;
       }
     }
@@ -37,30 +38,35 @@
 
     .how-it-works__step {
       padding: 10px;
-      background-color: rgb(255, 255, 255);
+      background-color: #fff;;
     }
     .how-it-works__contact {
       padding: 10px;
       grid-column: 1 / -1;
       justify-self: center;
-      background-color: rgb(255, 255, 255);
+      background-color: #fff;;
     }
 
     .how-it-works__icon {
-      border-color: rgb(187, 161, 11);
+      border-color: #f4581f;
       border-width: 8px;
       border-style: solid;
       border-radius: 70%;
       height: 150px;
       width: 150px;
+      margin: 0 auto;
+      display: block;
     }
 
     .how-it-works__step-title {
-      color: rgb(39, 41, 187);
+      padding: 3px;
+      color:#6748cd;
+;
     }
 
     .how-it-works__step-text {
-      color: rgb(33, 192, 54);
+      padding: 3px;
+      color: rgb(22, 22, 24);
     }
   }
 }
