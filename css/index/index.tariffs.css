@@ -27,8 +27,11 @@
             text-decoration: none; /*прибрати підкреслння*/
             padding: 15px 20px; /*відступи*/
           }
+
           &:hover {
-            text-decoration: underline; /* додає підкреслення при наведенні */
+            text-decoration: underline;
+            /* додає підкреслення при наведенні */
+            /* додає підкреслення при наведенні */
           }
         }
       }
