@@ -1,5 +1,5 @@
 .how-it-works {
-  background-color: #fff;
+  background-color: var(--color-white);
 
   .how-it-works__header {
     text-align: center;
@@ -20,7 +20,7 @@
       .how-it-works__subtitle {
         padding: 3px;
         font-size: 30px;
-        text-decoration-color: #333;
+        text-decoration-color: var(--color-text-maine);
       }
 
       .how-it-works__description {
@@ -32,23 +32,25 @@
   .how-it-works__steps {
     font-family: "Nunito Sans", sans-serif;
     text-align: center;
+    margin: auto;
+    max-width: 1200px;
     display: grid;
     padding: 5px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
     .how-it-works__step {
       padding: 10px;
-      background-color: #fff;;
+      background-color: var(--color-white);
     }
     .how-it-works__contact {
       padding: 10px;
       grid-column: 1 / -1;
       justify-self: center;
-      background-color: #fff;;
+      background-color: var(--color-white);
     }
 
     .how-it-works__icon {
-      border-color: #f4581f;
+      border-color: var(--accent-color);
       border-width: 8px;
       border-style: solid;
       border-radius: 70%;
@@ -60,13 +62,12 @@
 
     .how-it-works__step-title {
       padding: 3px;
-      color:#6748cd;
-;
+      color: var(--color-welcome-accent);
     }
 
     .how-it-works__step-text {
       padding: 3px;
-      color: rgb(22, 22, 24);
+      color: var(--color-text-maine);
     }
   }
 }
