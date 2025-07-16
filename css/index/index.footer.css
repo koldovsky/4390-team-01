@@ -1,5 +1,6 @@
 .footer {
   font-family: 'Nunito Sans', sans-serif;
+  padding: 2em 1em;
 }
 
 .footer__layout {
@@ -7,14 +8,14 @@
 }
 
 .footer__description {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   background-color: var(--color-bg-light);
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin-bottom: 2em;
+  padding: 1em;
 }
 
 .footer__headline {
@@ -38,7 +39,8 @@
 
 .footer__contacts {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 2em;
 }
 
@@ -47,6 +49,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  flex: 1 1 100%;
 }
 
 .footer__logo {
@@ -61,11 +64,12 @@
 
 .footer__info-group {
   display: flex;
-  justify-content: space-between;
-  margin-left: 10em;
+  flex-direction: column;
+  gap: 1.5em;
+  flex: 1 1 300px;
 }
 
-.footer__info-block{
+.footer__info-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5em;
@@ -83,13 +87,6 @@
   font-weight: 500;
 }
 
-.form__info-title {
-  font-weight: 700;
-  font-size: 1em;
-  color: var(--color-text-main);
-  margin-bottom: 1em;
-}
-
 .footer__info-value {
   font-weight: 700;
   font-size: 1em;
@@ -99,9 +96,10 @@
 .footer__subscribe {
   display: flex;
   flex-direction: column;
-  margin-right: 10em;
   gap: 0.8em;
-  width:400px;
+  flex: 1 1 280px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .footer__input {
@@ -110,12 +108,12 @@
   border: none;
   outline: 1px solid var(--color-border);
   border-radius: 8px;
-  font-family: 'Nunito Sans';
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 700;
   width: 100%;
 }
 
-.footer__input:focus { 
+.footer__input:focus {
   outline: 2px solid var(--color-border-active);
 }
 
@@ -130,7 +128,7 @@
   transition: background-color 0.3s ease;
   width: 100%;
   font-weight: 700;
-  font-family: 'Nunito Sans';
+  font-family: 'Nunito Sans', sans-serif;
   margin-top: 1em;
 }
 
@@ -171,6 +169,9 @@
   color: var(--color-text-muted);
 }
 
+/* ───────── АДАПТИВНІСТЬ ───────── */
+
+/* Планшети (max-width: 992px) */
 @media (max-width: 992px) {
   .footer__headline {
     font-size: 1.8em;
@@ -181,11 +182,24 @@
     font-size: 1em;
   }
 
-  .footer__info-group {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  .footer__info-block {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__info-group,
+  .footer__subscribe {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
   }
 }
 
+/* Мобільні (max-width: 600px) */
 @media (max-width: 600px) {
   .footer {
     padding: 1.5em 1em;
@@ -200,13 +214,33 @@
     align-items: center;
   }
 
-  .footer__input,
-  .footer__submit-button {
-    font-size: 1em;
-    width: 100%;
-  }
-
   .footer__logo {
     width: 100px;
   }
-} 
+
+  .footer__info-group,
+  .footer__subscribe {
+    padding: 0 1em;
+  }
+}
+
+/* Дуже малі екрани (max-width: 360px) */
+@media (max-width: 360px) {
+  .footer__headline {
+    font-size: 1.3em;
+  }
+
+  .footer__text {
+    font-size: 0.95em;
+  }
+
+  .footer__input,
+  .footer__submit-button {
+    font-size: 0.95em;
+    padding: 0.6em 1em;
+  }
+
+  .footer__menu-link {
+    font-size: 0.9em;
+  }
+}
