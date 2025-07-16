@@ -1,46 +1,62 @@
-<section id="faq" class="faq-section">
+<section id="faq" class="faq-section py-5 bg-light">
   <div class="container">
-    <h2 class="section-title">FAQ — Answering Your Questions</h2>
+    <h2 class="section-title text-center mb-4 fw-bold">FAQ | Answering Your Questions</h2>
+   <h3 class="text-center mb-1 fs-6 text-muted">
+  We have made the conditions for using our carsharing service as simple as possible. 
+  If you still have any questions, please contact us in any convenient way.
+</h3>
+
     <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
+
+      <div class="faq-item border-bottom py-3">
+        <button class="faq-question btn w-100 text-start d-flex justify-content-between align-items-center"
+                aria-expanded="false">
           How does carsharing work?
-          <span class="icon">+</span>
+          <span class="icon"></span>
         </button>
-        <div class="faq-answer" hidden>
+        <div class="faq-answer mt-2 ps-3" hidden>
           <p>Carsharing gives you access to vehicles on demand. Simply register, book via the app or website, pick up the car at the designated location, drive, then return it when you're done.</p>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
+
+      <div class="faq-item border-bottom py-3">
+        <button class="faq-question btn w-100 text-start d-flex justify-content-between align-items-center"
+                aria-expanded="false">
           What are the costs involved?
-          <span class="icon">+</span>
+          <span class="icon"></span>
         </button>
-        <div class="faq-answer" hidden>
+        <div class="faq-answer mt-2 ps-3" hidden>
           <p>Costs typically include a usage fee (hourly/daily), a per‑kilometer charge, and sometimes a small membership or booking fee. All charges are clearly shown before you confirm your booking.</p>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
+
+      <div class="faq-item border-bottom py-3">
+        <button class="faq-question btn w-100 text-start d-flex justify-content-between align-items-center"
+                aria-expanded="false">
           Who can drive the cars?
-          <span class="icon">+</span>
+          <span class="icon"></span>
         </button>
-        <div class="faq-answer" hidden>
+        <div class="faq-answer mt-2 ps-3" hidden>
           <p>Only licensed, registered members on your account can drive. Sharing your key or app access with non‑members is not allowed.</p>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
+
+      <div class="faq-item border-bottom py-3">
+        <button class="faq-question btn w-100 text-start d-flex justify-content-between align-items-center"
+                aria-expanded="false">
           What’s the cancellation policy?
-          <span class="icon">+</span>
+          <span class="icon"></span>
         </button>
-        <div class="faq-answer" hidden>
+        <div class="faq-answer mt-2 ps-3" hidden>
           <p>You can cancel without fee up to 12 hours before the booking starts. Late cancellations or no‑shows may incur a small penalty — see our full terms for details.</p>
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
+
 <script>
   document.querySelectorAll('.faq-question').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -48,7 +64,7 @@
       btn.setAttribute('aria-expanded', !expanded);
       const answer = btn.nextElementSibling;
       answer.hidden = expanded;
-      btn.querySelector('.icon').textContent = expanded ? '+' : '−';
+     
     });
   });
 </script>
