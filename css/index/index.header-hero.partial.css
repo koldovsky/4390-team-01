@@ -26,7 +26,7 @@
 }
 
 .header__hero-text {
-  font-size: 19px; /* NOT 2px */
+  font-size: 19px;
   color: rgb(93, 93, 93);
   margin-bottom: 20px;
   font-family: "Nunito Sans", sans-serif;
