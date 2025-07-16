@@ -11,18 +11,21 @@
 
 :root {
     scroll-behavior: smooth;
-    max-width: 1200px;
-    margin: auto;
     --tariffs-text-color: white;
     --frame-color__contacts: rgba(168, 168, 168, 0.3);
     --description-color__contacts: #a8a8a8;
     --action-color__contacts: #6748cd;
     --accent-color: #F4581F;
     --bace-color: #5d5d5d;
-  --title-color: #333235;
-
+    --title-color: #333235;
 }
 img {
   display: block;
   max-width: 100%;
+}
+
+.container
+{
+  max-width: 1200px;
+  margin: 0 auto;
 }
