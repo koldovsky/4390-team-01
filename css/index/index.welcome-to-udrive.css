@@ -1,17 +1,19 @@
 .about-udrive {
   margin-top: 150px;
-  background-image: url("/img/welcome/udrivelogo.png");
+  background-image: url("../../img/welcome/udrivelogo.png");
   background-position: center;
 
   /* background-size: cover; */
 
   .about-udrive__container {
     display: flex;
+
     .about-udrive__image {
       @media (min-width: 768px) {
         flex: 1;
       }
     }
+
     .about-udrive__content {
       /* font-size: 5vw; */
       /* max-width: 280px; */
@@ -43,9 +45,12 @@
 
       .about-udrive__features {
         display: flex;
-        flex-direction: column; /* вертикальное расположение */
-        gap: 24px; /* расстояние между элементами, можно изменить */
-        list-style: none; /* убирает маркеры списка */
+        flex-direction: column;
+        /* вертикальное расположение */
+        gap: 24px;
+        /* расстояние между элементами, можно изменить */
+        list-style: none;
+        /* убирает маркеры списка */
         padding: 25px;
         margin: 0;
 
@@ -55,19 +60,23 @@
           font-size: 14px;
           color: var(--color-welcome-text2);
           font-family: "Lato", sans-serif;
-          gap: 10px; /* расстояние между иконкой и текстом */
+          gap: 10px;
+          /* расстояние между иконкой и текстом */
 
           /* выравнивание по вертикали */
         }
       }
+
       .about-udrive__text {
         font-family: "Lato", sans-serif;
         font-size: 17px;
         color: var(--color-welcome-text2);
         /* max-width: 300px; */
       }
+
       .about-udrive__stats {
         margin-top: 100px;
+
         @media (min-width: 768px) {
           display: flex;
           justify-content: space-between;
@@ -87,6 +96,7 @@
           color: var(--color-welcome-accent);
           margin-bottom: 40px;
         }
+
         .about-udrive__stat-label {
           font-size: 14px;
           font-family: "Lato", sans-serif;
