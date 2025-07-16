@@ -1,15 +1,13 @@
 .footer {
-  font-family: 'Nunito Sans';
-  margin:auto;
-
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .footer__layout {
-  margin:auto;
+  margin: 0 auto;
 }
 
 .footer__description {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato';
   background-color: var(--color-bg-light);
   max-width: 100%;
   display: flex;
@@ -21,7 +19,7 @@
 
 .footer__headline {
   color: var(--color-primary);
-  font-size: 2.4em;
+  font-size: 2.2em;
   font-weight: 800;
   margin: 1em 0;
 }
@@ -46,10 +44,9 @@
 
 .footer__up {
   display: flex;
-  width: 80%;
   flex-direction: column;
+  align-items: center;
   text-align: center;
-  justify-content: center;
 }
 
 .footer__logo {
@@ -65,7 +62,7 @@
 .footer__info-group {
   display: flex;
   justify-content: space-between;
-  margin-left: 8em;
+  margin-left: 10em;
 }
 
 .footer__info-block{
@@ -88,14 +85,14 @@
 
 .form__info-title {
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1em;
   color: var(--color-text-main);
   margin-bottom: 1em;
 }
 
 .footer__info-value {
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1em;
   color: var(--color-text-main);
 }
 
@@ -113,6 +110,7 @@
   border: none;
   outline: 1px solid var(--color-border);
   border-radius: 8px;
+  font-family: 'Nunito Sans';
   font-weight: 700;
   width: 100%;
 }
@@ -132,6 +130,7 @@
   transition: background-color 0.3s ease;
   width: 100%;
   font-weight: 700;
+  font-family: 'Nunito Sans';
   margin-top: 1em;
 }
 
@@ -210,4 +209,4 @@
   .footer__logo {
     width: 100px;
   }
-}
+} 
