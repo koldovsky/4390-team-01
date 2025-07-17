@@ -1,120 +1,159 @@
 .tariffs {
-  background: url("../..//img/tariffs/background.png") no-repeat center / cover; /*встановдюю фоном чорну картинку*/
+  background: url(../../img/tariffs/background.png) no-repeat center / cover; /*встановлюю фоном чорну картинку*/
+  background-position: 20% 50%;
   padding: 0 24px; /*відступи*/
-  color: var(--tariffs-text-color); /*ибілий колір тексту*/
+  color: var(--tariffs-text-color); /*білий колір тексту*/
   .tariffs__container {
     padding: 60px 0 120px; /* відступи від верху і низу для контейнера*/
     .tariffs__upper-part {
       display: flex;
-      flex-direction: column; /*розташування колонкою*/
-      align-items: center; /*по центру*/
+      flex-direction: column;
+      /*розташування колонкою*/
+      align-items: center;
+      /*по центру*/
 
       .tariffs__title {
         font-size: 0.6875rem;
       }
+
       .tariffs__subtitle {
         font-size: 2.125rem;
       }
     }
+
     .tariffs__class {
       .tariffs__group {
         .tariffs__group-title {
-          display: inline; /*розмір контейнера в розмір контексту*/
+          display: inline;
+
+          /*розмір контейнера в розмір контексту*/
           .tariffs__group-link {
-            color: var(
-              --tariffs-text-color
-            ); /*використання змінної яка містить білий текст*/
-            text-decoration: none; /*прибрати підкреслння*/
-            padding: 15px 20px; /*відступи*/
+            color: var(--tariffs-text-color);
+            /*використання змінної яка містить білий текст*/
+            text-decoration: none;
+            /*прибрати підкреслння*/
+            padding: 15px 20px;
+            /*відступи*/
           }
+
           &:hover {
-            text-decoration: underline; /* додає підкреслення при наведенні */
+            text-decoration: underline;
+            /* додає підкреслення при наведенні */
           }
         }
       }
 
       @media (min-width: 478px) {
-        flex-direction: row; /*робити в рядок*/
-        justify-content: space-around; /*однаковий відступ навколо елемента*/
+        flex-direction: row;
+        /*робити в рядок*/
+        justify-content: space-around;
+        /*однаковий відступ навколо елемента*/
       }
 
       .tariffs__plans {
-        display: grid; /*створюємо гріт-контейнер*/
+        display: grid;
+        /*створюємо гріт-контейнер*/
         gap: 24px;
-        grid-template-columns: repeat(
-          1,
-          1fr
-        ); /*одна картка коли малий екран( одна колонка адна частина вільного простору */
-
+        grid-template-columns: repeat(1, 1fr);
+        /*одна картка коли малий екран( одна колонка адна частина вільного простору */
         @media (min-width: 478px) {
-          grid-template-columns: repeat(
-            2,
-            1fr
-          ); /*дві картки коли середній екран (дві колонки одна частина віьго протору*/
+          grid-template-columns: repeat(2, 1fr);
+          /*дві картки коли середній екран (дві колонки одна частина віьго протору*/
         }
+
         @media (min-width: 990px) {
-          grid-template-columns: repeat(
-            3,
-            1fr
-          ); /*три картки коли великий екран (три колонки одна частина доступного простору */
+          grid-template-columns: repeat(3, 1fr);
+          /*три картки коли великий екран (три колонки одна частина доступного простору */
         }
       }
+
       .tariffs__card {
         display: flex;
-        flex-direction: column; /*  елементи в колонку */
-        justify-content: space-between; /* рівномірно розподілити */
-        align-items: flex-start; /* вирівняти  по початку картки */
-        padding: 20px; /*відступи*/
-        background: url(../../img/tariffs/orange-fon.jpg) no-repeat center / cover; /* встановлюю оранжевий фон*/
-        border-radius: 15px; /*заокруглення*/
+        flex-direction: column;
+        /*  елементи в колонку */
+        justify-content: space-between;
+        /* рівномірно розподілити */
+        align-items: flex-start;
+        /* вирівняти  по початку картки */
+        padding: 20px;
+        /*відступи*/
+        background: url(../../img/tariffs/orange-fon.jpg) no-repeat center /
+          cover;
+        /* встановлюю оранжевий фон*/
+        border-radius: 15px;
+        /*заокруглення*/
         background-position: 50% 18%;
-        gap: 20px; /* відступи між елементами */
+        /*зміщене розташування*/
+        gap: 20px;
+        /* відступи між елементами */
         box-sizing: border-box;
         height: 100%;
+
         .tariffs__type {
           font-size: 1.0625rem;
-          font-weight: bold;/*Робить текст жирним.*/
+          font-weight: bold;
+          /*Робить текст жирним.*/
         }
+
         .tariffs__price {
           font-size: 2.125rem;
-          font-weight: bold;/*Робить текст жирним.*/
-          margin: 8px 0;/*вертикальні відступи*/
+          font-weight: bold;
+          /*Робить текст жирним.*/
+          margin: 8px 0;
+          /*вертикальні відступи*/
         }
+
         .tariffs__description {
           font-size: 1.0625rem;
-          margin-bottom: 12px;/*відступ знизу для відокремлення від наступного елемента*/
+          margin-bottom: 12px;
+          /*відступ знизу для відокремлення від наступного елемента*/
         }
+
         .tariffs__divider {
           height: 2px;
           width: 30px;
           background: #fff;
-          margin: 10px 0;/*відступи зверху та знизу*/
+          margin: 10px 0;
+          /*відступи зверху та знизу*/
         }
+
         .tariffs__features {
           display: grid;
-          grid-template-columns: 1fr;/*одна колонка*/
-          row-gap: 8px;/*відстан сміж рядками*/
-          column-gap: 16px;/*відстань між колонками*/
+          grid-template-columns: 1fr;
+          /*одна колонка*/
+          row-gap: 8px;
+          /*відстан сміж рядками*/
+          column-gap: 16px;
+          /*відстань між колонками*/
 
           @media (min-width: 766px) {
-            grid-template-columns: auto 1fr;/*змінює на дві колонки*/
+            grid-template-columns: auto 1fr;
+            /*змінює на дві колонки*/
           }
 
           .tariffs__feature {
             font-size: 0.95rem;
+
             b {
-              font-weight: bold;/*Робить текст жирним.*/
+              font-weight: bold;
+              /*Робить текст жирним.*/
             }
           }
         }
+
         .tariffs__select {
           font-size: 1.0625rem;
           color: var(--tariffs-text-color);
-          font-weight: bold;/*робить текс жирним*/
-          background: none; /* прибирає фон */
-          border: none; /* прибирає рамки */
-          padding: 0; /* прибирає відступи */
-          cursor: pointer; /* залишає курсор pointer при наведенні */
+          font-weight: bold;
+          /*робить текс жирним*/
+          background: none;
+          /* прибирає фон */
+          border: none;
+          /* прибирає рамки */
+          padding: 0;
+          /* прибирає відступи */
+          cursor: pointer;
+          /* залишає курсор pointer при наведенні */
         }
       }
     }

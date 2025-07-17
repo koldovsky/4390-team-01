@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 *,
 *::after,
@@ -11,12 +11,7 @@
 
 :root {
   scroll-behavior: smooth;
-  /* max-width: 1200px; */
-  margin: auto;
   --tariffs-text-color: white;
-  --frame-color__contacts: rgba(168, 168, 168, 0.3);
-  --description-color__contacts: #a8a8a8;
-  --action-color__contacts: #6748cd;
   --accent-color: #f4581f;
   --bace-color: #5d5d5d;
   --title-color: #333235;
@@ -39,11 +34,21 @@
   --color-bg-light: #f9f9f9;
 
   --color-border: #ccc;
-  --color-border-active:#3b99fc;
+  --color-border-active: #3b99fc;
   --color-white: #fff;
+
+  /* Contacts color */
+  --frame-color__contacts: rgba(168, 168, 168, 0.3);
+  --description-color__contacts: #a8a8a8;
+  --action-color__contacts: #6748cd;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
