@@ -1,0 +1,21 @@
+.header-nav__top{
+    width: 100%;
+    height: fit-content;
+    background-color: #d5d5d5;
+}
+.header-nav__container{
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-nav__contacts-text{
+    color: #6748cd;
+}
+.header-nav__social-icons a>svg{
+    width: 24px;
+    height: 24px;
+    fill: #6748cd;
+}
