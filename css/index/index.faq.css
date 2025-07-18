@@ -1,0 +1,133 @@
+<style>
+/* === FAQ Section Layout === */
+#faq.faq-section {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* === FAQ Headings === */
+#faq .section-title {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #333235;
+}
+
+#faq .section-title::after {
+  content: "";
+  display: block;
+  width: 60px;              /* Shorter underline */
+  height: 4px;              /* Thickness */
+  background-color: #f4581f; /* Orange color */
+  margin: 0.5rem auto 0 auto; /* Center it */
+  border-radius: 2px;
+}
+
+
+#faq h3 {
+  font-size: 1rem;
+  color: #888;
+  font-weight: 500;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.5;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 550px;
+}
+
+/* === FAQ List === */
+.faq-list {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* === FAQ Items === */
+.faq-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* === FAQ Questions === */
+.faq-question {
+  background: transparent;
+  border: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #333235;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.faq-question .icon {
+  margin-left: auto;
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Horizontal and Vertical bars - plus icon */
+.faq-question .icon::before,
+.faq-question .icon::after {
+  content: "";
+  position: absolute;
+  background-color: #f4581f;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  transform-origin: center center;
+  transition: transform 0.3s ease, background-color 0.2s ease;
+  transform: translateY(-50%);
+}
+
+/* Vertical bar */
+.faq-question .icon::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/* Rotate bars to form "×" when expanded */
+.faq-question[aria-expanded="true"] .icon::before {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.faq-question[aria-expanded="true"] .icon::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/* Hover effect for icon bars */
+.faq-question:hover .icon::before,
+.faq-question:hover .icon::after {
+  background-color: #6748cd;
+}
+
+/* === FAQ Answers === */
+.faq-answer {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.faq-answer p {
+  margin: 0;
+  color: #333235;
+}
+
+/* === Hover Effect === */
+.faq-question:hover .icon {
+  color: #6748cd;
+}
+</style>
