@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+:root {
+  font-family: "Nunito Sans", sans-serif;
+}
+
 .app-download {
   background-color: #f9f9f9;
   padding: 60px 20px;
@@ -13,12 +17,11 @@
   align-items: center;
   gap: 40px;
 }
-:root {
-    h1,h3 {
-        color:black
-    }
-    h2 {
-        color :#707070
-    }
-    font-family: "Nunito Sans", sans-serif;
-}}
+
+h1, h3 {
+  color:black
+}
+
+h2 {
+  color:#707070
+}
