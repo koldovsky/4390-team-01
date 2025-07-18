@@ -3,7 +3,7 @@
   background-position: 20% 50%;
   padding: 0 24px; /*відступи*/
   color: var(--tariffs-text-color); /*білий колір тексту*/
-  .tariffs__container {
+  .tariffs__part {
     padding: 60px 0 120px; /* відступи від верху і низу для контейнера*/
     .tariffs__upper-part {
       display: flex;
@@ -58,7 +58,7 @@
         /*одна картка коли малий екран( одна колонка адна частина вільного простору */
         @media (min-width: 478px) {
           grid-template-columns: repeat(2, 1fr);
-          /*дві картки коли середній екран (дві колонки одна частина віьго протору*/
+          /*дві картки коли середній екран (дві колонки одна частина вільного простору*/
         }
 
         @media (min-width: 990px) {
