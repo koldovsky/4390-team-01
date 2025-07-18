@@ -2,6 +2,7 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+
 .footer__description {
   font-family: "Lato", sans-serif;
   background-color: var(--color-bg-light);
@@ -199,7 +200,7 @@
 
   .footer__text,
   .footer__contact-link {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 
   .footer__info-block {
