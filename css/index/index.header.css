@@ -77,6 +77,9 @@
     .header-nav__top{
         background-color: #fff;
     }
+    .bottom__container{
+        padding: 25px 32px;
+    }
     .header-nav__logo{
         min-width: 100%;
         display: flex;
@@ -107,8 +110,25 @@
         max-height: 0;
         overflow: hidden;
     }
-    #menu:checked ~ .header-nav__top, #menu:checked ~ .header-nav__bottom{
-        max-height: 100vh;
+    .header-nav__links-item{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0;
+        font-weight: 700;
+    }
+    .header-nav__links-item:first-child{
+        padding-top: 25px;
+    }
+    .header-nav__top>div.header-nav__container{
+        padding-top: 0;
+    }
+    .header-nav__contacts{
+        padding-bottom: 30px;
+    }
+    #menu:checked ~ .header-nav__top{
+        min-height: 60vh;
     }
     #menu:checked ~ .header-nav__bottom>.header-nav__container>.header-nav__links{
         min-height: fit-content;
