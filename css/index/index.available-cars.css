@@ -1,0 +1,235 @@
+.available-cars {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: var(--color-white);
+  font-family: "Lato", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.available-cars__grid-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.available-cars__text {
+  width: 736px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.available-cars__section-name {
+  font-size: 0.688rem;
+  font-weight: 750;
+  text-transform: uppercase;
+  color: var(--car-section-name-color);
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.available-cars__call-to-action {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.625rem;
+  font-weight: 780;
+  color: var(--car-title-color);
+  margin: 0;
+}
+
+.available-cars__breaking-line {
+  width: 55px;
+  height: 4px;
+  margin: 0.25rem auto;
+}
+
+.available-cars__breaking-line svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.available-cars__description {
+  font-size: 1.188rem;
+  color: var(--car-description-color);
+  font-weight: 500;
+  margin: 0;
+}
+
+.available-cars__options-carousel-full {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+  max-width: 80%;
+  overflow: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.available-cars__options-carousel-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  width: 95%;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.available-cars__options-carousel-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.car-card {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  width: 100%;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  border-radius: 12px;
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+.car-card__image {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.car-card__category {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 11px;
+  color: var(--car-category-color);
+  margin-bottom: 0.25rem;
+}
+
+.car-card__model {
+  font-size: 23px;
+  text-align: left;
+  font-weight: bold;
+  color: var(--car-model-color);
+  margin-bottom: 1rem;
+}
+
+.car-card__features {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.car-card__feature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.car-card__feature-checkmark img {
+  width: 16px;
+  height: 16px;
+}
+
+.car-card__feature-text {
+  font-size: 0.95rem;
+  color: var(--car-feature-text-color);
+}
+
+.car-card__button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--car-button-bg);
+  color: var(--color-white);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  align-self: flex-start;
+  white-space: nowrap;
+}
+
+.car-card__button:hover {
+  background-color: var(--car-button-bg-hover);
+}
+
+.available-cars__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  cursor: pointer;
+  z-index: 20;
+  transition: transform 0.2s ease;
+}
+
+.available-cars__arrow:hover {
+  transform: translateY(-50%) scale(1.05);
+}
+
+.available-cars__arrow--left {
+  left: -0.5rem;
+}
+
+.available-cars__arrow--right {
+  right: -0.5rem;
+}
+
+@media (max-width: 767px) {
+  .available-cars__options-carousel-full {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .car-card {
+    width: calc(50% - 0.5rem);
+    max-width: calc(50% - 0.5rem);
+  }
+
+  .available-cars__options-carousel-full {
+    max-width: 100%;
+    padding: 1rem 1rem;
+  }
+}
+
+@media (min-width: 991px) {
+  .car-card {
+    width: calc(33.333% - 0.66rem);
+    max-width: calc(33.333% - 0.66rem);
+  }
+
+  .available-cars__options-carousel-full {
+    max-width: 100%;
+    padding: 1rem 1rem;
+  }
+}
