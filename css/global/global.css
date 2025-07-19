@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 *,
 *::after,
@@ -41,6 +42,16 @@
   --frame-color__contacts: rgba(168, 168, 168, 0.3);
   --description-color__contacts: #a8a8a8;
   --action-color__contacts: #6748cd;
+  
+  /* Available-cars color */
+  --car-section-name-color: #a8a8a8;
+  --car-title-color: #333235;
+  --car-description-color: #5d5d5d;
+  --car-button-bg: #6c47ff;
+  --car-button-bg-hover: #5432d6;
+  --car-category-color: #999;
+  --car-model-color: #333;
+  --car-feature-text-color: #444;
 }
 
 img {
