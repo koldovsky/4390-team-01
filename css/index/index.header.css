@@ -1,3 +1,7 @@
+.header-nav{
+    display: flex;
+    flex-direction: column;
+}
 .header-nav__top {
     width: 100%;
     height: fit-content;
@@ -5,7 +9,7 @@
 }
 
 .header-nav__container {
-    width:100%;
+    width: 100%;
     max-width: 1200px;
     display: flex;
     margin: 0 auto;
@@ -21,7 +25,8 @@
     font-style: normal;
     font-size: 1rem;
 }
-.header-nav__phone-number{
+
+.header-nav__phone-number {
     color: #5d5d5d;
     font-family: "Lato", sans-serif;
     font-weight: 700;
@@ -29,17 +34,25 @@
     font-size: 1rem;
     text-decoration: none;
 }
-.header-nav__social-icons{
+
+.header-nav__social-icons {
     display: flex;
     justify-content: space-between;
     gap: 15px;
 }
+
 .header-nav__social-icons a>svg {
     width: 24px;
     height: 24px;
     fill: #6748cd;
 }
-.header-nav__links{
+
+.header-nav__logo img{
+    display: block;
+    width: 175px;
+    height: 52px;
+}
+.header-nav__links {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,7 +62,58 @@
     font-style: normal;
     font-size: 1rem;
 }
-.header-nav__links-item{
+
+.header-nav__links-item {
     text-decoration: none;
     color: #5d5d5d;
+}
+#menu, .header-nav__logo label{
+    display: none;
+}
+@media screen and (max-width: 992px){
+    .header-nav{
+        flex-direction: column-reverse;
+    }
+    .header-nav__top{
+        background-color: #fff;
+    }
+    .header-nav__logo{
+        min-width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-nav__container, .header-nav__links{
+        flex-direction: column;
+    }
+    .header-nav__logo label{
+        display: block;
+        cursor: pointer;
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }
+    .header-nav__logo label::before{
+        position: absolute;
+        content: "menu";
+        font-family: "Material Icons";
+        top: 0;
+        left: 0;
+        font-size: 30px;
+    }
+    .header-nav__links, .header-nav__top{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    #menu:checked ~ .header-nav__top, #menu:checked ~ .header-nav__bottom{
+        max-height: 100vh;
+    }
+    #menu:checked ~ .header-nav__bottom>.header-nav__container>.header-nav__links{
+        min-height: fit-content;
+    }
+    #menu:checked ~ .header-nav__bottom>.header-nav__container>.header-nav__logo label::before{
+        content: "close";
+    }
 }
