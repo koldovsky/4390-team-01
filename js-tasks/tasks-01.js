@@ -36,6 +36,5 @@ function litres(time) {
 function lovefunc(flower1, flower2) {
   // moment of truth
 
-  return flower1 !== flower2 ? true : false; //якщо не парні тоді любов,якщо ні тоді немає любові
-}
-*/
+  return (flower1 %2) !== (flower2%2) ? true : false; //якщо не парні тоді любов,якщо ні тоді немає любові
+}*/
