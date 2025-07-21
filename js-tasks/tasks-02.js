@@ -8,7 +8,7 @@ function stringToArray(string){
 }
 https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 function DNAtoRNA(dna) {
- return dna.replaceAll("T","U");
+ return dna.replaceAll("T","U"); 
   
   // create a function which returns an RNA sequence from the given DNA sequence
 }
