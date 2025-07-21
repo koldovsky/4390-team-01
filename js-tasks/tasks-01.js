@@ -7,7 +7,7 @@ function boolToWord(bool) {
   return "No";
 }
 
-/*//Andrii Les
+//Andrii Les
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   // code goes here
   let result = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
@@ -37,4 +37,4 @@ function lovefunc(flower1, flower2) {
   // moment of truth
 
   return (flower1 %2) !== (flower2%2) ? true : false; //якщо не парні тоді любов,якщо ні тоді немає любові
-}*/
+}
