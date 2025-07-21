@@ -7,7 +7,7 @@ function boolToWord(bool) {
   return "No";
 }
 
-/*//Andrii Les
+//Andrii Les
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   // code goes here
   let result = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
@@ -37,11 +37,11 @@ function lovefunc(flower1, flower2) {
   // moment of truth
 
   return (flower1 %2) !== (flower2%2) ? true : false; //якщо не парні тоді любов,якщо ні тоді немає любові
-}*/
+}
 
 
 
-/*
+
 //Fedir Komarovskyi
 //Завдання 1
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
@@ -69,14 +69,14 @@ function move(position, roll) {
 
 //Завдання 4
 function greet(name, owner) {
-  //if(name === owner)
-    //{
-      //return 'Hello boss';
-    //}
-  //else
-    //{
-      //return 'Hello guest'
-    //}
+  /*if(name === owner)
+    {
+      return 'Hello boss';
+    }
+  else
+    {
+      return 'Hello guest'
+    }*/
 
   return name === owner ? "Hello boss" : "Hello guest";
 }
@@ -89,5 +89,4 @@ function litres(time) {
 //Завдання 6
 function lovefunc(flower1, flower2) {
   return flower1 % 2 != flower2 % 2;
-}*/
-
+}
