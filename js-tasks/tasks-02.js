@@ -130,7 +130,6 @@ function past(h, m, s){
 function isDivisible(n, x, y) {
   return n % x === 0 && n % y === 0 ? true : false;
 }
-//End code Fedir
 */
 
 https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
