@@ -32,6 +32,11 @@ function DNAtoRNA(dna) {
   return dna.replaceAll("T", "U");
 }
 
+//DeinekaAndrii
+function DNAtoRNA(dna) {
+  return dna.replaceAll(/T/g, 'U');
+}
+
 //Поглиблені задачі
 //Завдання 3 https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 var min = function (list) {
