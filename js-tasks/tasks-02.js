@@ -4,6 +4,10 @@
 function stringToArray(string) {
   return string.split(" ");
 }
+//DeinekaAndrii
+function stringToArray(string) {
+   return (string.match(/[а-яёa-zієїґ0-9’']+/gi) || []);
+}
 
 //Завдання 2 https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 function DNAtoRNA(dna) {
