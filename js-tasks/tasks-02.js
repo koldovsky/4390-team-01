@@ -1,4 +1,4 @@
-//Fedir Komarovskyi
+/*//Fedir Komarovskyi
 //Базові задачі
 //Завдання 1 https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 function stringToArray(string) {
@@ -75,8 +75,33 @@ function doubleInteger(i) {
   return i * 2;
 }
 
-//Завдання 6
+//Завдання 6  https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
+function nthEven(n){
+  return (n - 1) * 2;
+}
+
+//Завдання 7 https://www.codewars.com/kata/5933a1f8552bc2750a0000ed/train/javascript
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
+
+//Завдання 8 https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript
+function getRealFloor(n) {
+  return n <= 0 ? n : n <= 12 ? n - 1 : n - 2;
+}
+
+//Завдання 9 https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
+function past(h, m, s){
+  return (h * 3600 + m * 60 + s) * 1000;
+  //#Happy Coding! ^_^
+}
+
+//Завдання 10 https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
+function isDivisible(n, x, y) {
+  return n % x === 0 && n % y === 0 ? true : false;
+}
 //End code Fedir
+*/
 
 https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 function stringToArray(string){
