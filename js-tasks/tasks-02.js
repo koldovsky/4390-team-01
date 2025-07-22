@@ -4,6 +4,7 @@
 function stringToArray(string) {
   return string.split(" ");
 }
+//Завдання 1 https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 //DeinekaAndrii
 function stringToArray(string) {
    return (string.match(/[а-яёa-zієїґ0-9’']+/gi) || []);
@@ -32,6 +33,7 @@ function DNAtoRNA(dna) {
   return dna.replaceAll("T", "U");
 }
 
+//Завдання 2 https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 //DeinekaAndrii
 function DNAtoRNA(dna) {
   return dna.replaceAll(/T/g, 'U');
@@ -48,6 +50,19 @@ var max = function (list) {
   list.sort((a, b) => b - a);
   return list[0];
 };
+
+//Поглиблені задачі
+//Завдання 3 https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
+//DeinekaAndrii
+var min = function(list){
+    const minValue = Math.min(...list);
+    return minValue;
+}
+
+var max = function(list){
+    const maxValue = Math.max(...list);
+    return maxValue;
+}
 
 //Завдання 4 https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 function min(arr, toReturn) {
@@ -76,6 +91,15 @@ function min(arr, toReturn) {
   } else {
     return indexMinValue;
   }
+}
+
+//Завдання 4 https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
+//DeinekaAndrii
+function min(arr, toReturn) { 
+  const minValue = Math.min(...arr);
+  const indexOfMinValue = arr.indexOf(minValue);
+  if(toReturn === "value") return minValue;
+  if(toReturn === "index") return indexOfMinValue;
 }
 
 //Додаткові завдання
