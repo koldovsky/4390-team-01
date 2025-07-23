@@ -1,7 +1,6 @@
-<style>
 /* === FAQ Section Layout === */
 #faq.faq-section {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -130,4 +129,4 @@
 .faq-question:hover .icon {
   color: #6748cd;
 }
-</style>
+

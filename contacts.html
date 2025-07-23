@@ -14,16 +14,16 @@
   </head>
 
   <body>
-    <main class="main">
-      <!-- Блок навігації -->
-      <header class="header">
-        <nav
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="contacts.header-nav.partial.html"
-        ></nav>
-      </header>
+    <header class="header">
+      <!--Andrii Deineka-->
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+    </header>
 
+    <main class="main">
       <!-- блок контактної інформації -->
       <section
         data-hx-trigger="load"
@@ -38,5 +38,11 @@
         data-hx-get="contacts.contact-form.partial.html"
       ></section>
     </main>
+    
+    <footer
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></footer>
   </body>
 </html>
