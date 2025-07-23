@@ -1,0 +1,34 @@
+.timer__background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  gap: 20px;
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 0;
+}
+.timer__background--top {
+  background-image: url("../img/timer/upper.webp");
+}
+.timer__content {
+  background-image: url("../img/timer/background.png");
+}
+.timer__background--bottom {
+  background-image: url("../img/timer/lower.webp");
+}
+.timer__countdown {
+  display: flex;
+  flex-direction: row;
+}
+.timer__offer {
+  color: aliceblue;
+  font-size: 5rem;
+}
+.timer__circle {
+  fill: aliceblue;
+  font-size: 30px;
+  width: 200px;
+  height: 100px;
+}
