@@ -1,5 +1,6 @@
 .contact-information {
   font-family: "Poppins", sans-serif;
+  padding-top: 4rem;
 
   .contact-information__intro {
     display: flex;

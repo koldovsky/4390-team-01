@@ -1,0 +1,37 @@
+.contacts__description {
+  font-family: "Lato", sans-serif;
+  background-color: var(--color-bg-light);
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+}
+
+
+.contacts__description-textblock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 2em;
+  width: 60%;
+}
+
+.contacts__headline {
+  color: var(--color-primary);
+  font-size: 3em;
+  font-weight: 800;
+  margin: 1em 0;
+}
+
+.contacts__text {
+  font-size: 1.2em;
+  color: var(--color-text-main);
+}
+
+.contacts__contact-link {
+  color: var(--color-accent);
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: underline;
+}
