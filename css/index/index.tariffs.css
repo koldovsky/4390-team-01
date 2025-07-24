@@ -14,15 +14,20 @@
 
       .tariffs__title {
         font-size: 0.6875rem;
+        font-family: "Lato", sans-serif;
       }
 
       .tariffs__subtitle {
         font-size: 2.125rem;
       }
+      .tariffs__subtitle-second{
+        font-family: "Lato", sans-serif;
+      }
     }
 
     .tariffs__class {
       .tariffs__group {
+        font-family: "Nunito", sans-serif;
         .tariffs__group-title {
           display: inline;
 
