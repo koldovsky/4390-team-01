@@ -1,0 +1,76 @@
+.discount-timer {
+  .discount-timer__wrapper {
+    .discount-timer__background--top {
+      background-image: url("../../img/timer/upper.webp");
+      height: 100px;
+      background-size: cover;
+      background-position: center;
+    }
+    .discount-timer__content {
+      background-image: url("../../img/timer/background.png");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      width: 100%;
+      gap: clamp(1rem, 3vw, 3rem);
+      padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 4vw, 3rem);
+      .discount-timer__offer {
+        color: var(--color-white);
+        font-size: clamp(42px, 6vw, 62px);
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: bold;
+        text-align: center;
+      }
+      .discount-timer__countdown {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: clamp(0.5rem, 2vw, 2rem);
+        .discount-timer__unit {
+          width: clamp(50px, 15vw, 80px);
+          height: clamp(50px, 15vw, 80px);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .discount-timer__number {
+            font-size: clamp(1.125rem, 5vw, 2.25rem);
+            font-family: "Nunito Sans", sans-serif;
+            color: var(--color-white);
+            font-weight: bold;
+          }
+          .discount-timer__label {
+            font-size: clamp(0.75rem, 2.5vw, 1.125rem);
+            font-family: "Lato", sans-serif;
+            color: var(--color-white);
+            opacity: 0.54;
+          }
+        }
+        .discount-timer__separator {
+          background-color: var(--color-white);
+          width: 1px;
+          height: clamp(40px, 10vw, 80px);
+          opacity: 0.125;
+        }
+      }
+    }
+    .discount-timer__note {
+      font-size: 17px;
+      font-family: "Lato", sans-serif;
+      color: var(--color-white);
+      text-align: center;
+    }
+    .discount-timer__background--bottom {
+      background-image: url(../../img/timer/lower.webp);
+      height: 100px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}

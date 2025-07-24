@@ -1,3 +1,5 @@
 @import url(global/global.css);
+@import url(global/global.header.css);
 @import url(contacts/contacts.info.css);
 @import url(contacts/contacts.form.css);
+@import url(global/global.footer.css);

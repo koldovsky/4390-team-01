@@ -1,5 +1,5 @@
 @import url(global/global.css);
-@import url(index/index.header.css);
+@import url(global/global.header.css);
 @import url(index/index.header-hero.partial.css);
 @import url(index/index.how-it-works.css);
 @import url(index/index.welcome-to-udrive.css);
@@ -9,5 +9,7 @@
 @import url(index/index.clients.css);
 @import url(index/index.discount-timer.css);
 @import url(index/index.faq.css);
+@import url(index/index.contacts.css);
+@import url(global/global.footer.css);
 @import url(index/index.footer.css);
 
