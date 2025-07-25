@@ -123,4 +123,23 @@ function circleCircumference(circle) {
 }
 console.log(new Circle(new Point(1,3),5))
 */
+//AntonKon
+//Задача 1 https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
+function circleCircumference(circle) {
+return 2 * Math.PI * circle.radius;
+}
 
+//Задача 2 https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
+function giveMeFive(obj) {
+  let array = [];
+  for (let key in obj) {
+    if (key.length === 5) {
+    array.push(key);
+    }
+    let value = obj[key];
+    if (value.length === 5 && typeof value === "string") {
+    array.push(value);
+    }
+  }
+  return array;
+}
