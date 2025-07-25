@@ -14,23 +14,7 @@ https: function giveMeFive(obj) {
   return array;
 }
 
-/*class Point {
-  constructor(x, y) {
-    this.x = x;
-    this.y = y;
-  }
-}
-class Circle {
-  constructor(center, radius) {
-    this.center = center;
-    this.radius = radius;
-  }
-}
-function circleCircumference(circle) {
-  let circleLength = 2 * Math.PI * circle.radius;
-  let rounded = circleLength.toFixed(6);
-  return Number(rounded);
-}*/
+
 
 // Get Coding :)
 https://www.codewars.com/kata/fun-with-es6-classes-number-2-animals-and-inheritance/train/javascript
@@ -59,3 +43,12 @@ class Dog extends Animal {
     return `Hello ${this.master}`;
   }
 }
+
+https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
+function circleCircumference(circle) {
+  let circleLength = 2 * Math.PI * circle.radius;
+  let rounded = circleLength.toFixed(6);
+  return Number(rounded);
+}
+console.log(new Circle(new Point(1,3),5))
+
