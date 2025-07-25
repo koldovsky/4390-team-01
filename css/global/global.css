@@ -52,6 +52,17 @@
   --car-category-color: #999;
   --car-model-color: #333;
   --car-feature-text-color: #444;
+
+  /* DOWNLOAD */
+ --background-color: #f5f5f5;
+ --download__description-color: #353437; 
+ --download__subtitle-color: #333235;
+ --download__title-color: #333235;
+ --download__headline-color: #707070;
+ --download__contents-color: #707070;
+ --download__line-color: #f4591f;
+ 
+
 }
 
 img {
