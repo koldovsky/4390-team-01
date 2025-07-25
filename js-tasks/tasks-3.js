@@ -115,11 +115,12 @@ class Dog extends Animal {
   }
 }
 
-https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
-/*function circleCircumference(circle) {
+/*https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
+function circleCircumference(circle) {
   let circleLength = 2 * Math.PI * circle.radius;
   let rounded = circleLength.toFixed(6);
   return Number(rounded);
 }
 console.log(new Circle(new Point(1,3),5))
 */
+
