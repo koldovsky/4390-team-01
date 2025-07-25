@@ -124,3 +124,19 @@ function circleCircumference(circle) {
 console.log(new Circle(new Point(1,3),5))
 */
 
+function buildFun(N) {
+  const res = [];
+
+  for (let i = 0; i < N; i++) {
+    res.push(
+      (function(iCopy) {
+        return function() {
+          return iCopy;
+        };
+      })(i)
+    );
+  }
+
+  return res;
+}
+
