@@ -1,12 +1,16 @@
-function init() {
+document.addEventListener("DOMContentLoaded", () => {
+  const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
+  let loadedPartialsCount = 0;
+
+  function init() {
     import('./index.tariffs.js');
     import('./index.available-cars.js');
-}
+  }
 
-const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
-let loadedPartialsCount = 0;
-
-document.body.addEventListener('htmx:afterOnLoad', () => {
+  document.body.addEventListener('html:afterOnLoad', () => {
     loadedPartialsCount++;
-    if (loadedPartialsCount === totalPartials) init();
+    if (loadedPartialsCount === totalPartials) {
+      init();
+    }
+  });
 });
