@@ -46,7 +46,7 @@ function scrollLeft() {
   setTimeout(() => {
     carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
     setTimeout(() => {
-      isScrolling = false; 
+      isScrolling = false;
     }, 350);
   }, 20);
 }
@@ -78,3 +78,46 @@ leftBtn.addEventListener("click", () => handleUserInteraction("left"));
 rightBtn.addEventListener("click", () => handleUserInteraction("right"));
 
 startAutoScroll();
+
+let touchStartX = 0;
+let isDragging = false;
+
+carousel.addEventListener(
+  "touchstart",
+  (e) => {
+    touchStartX = e.touches[0].clientX;
+    isDragging = true;
+    stopAutoScroll();
+  },
+  { passive: true }
+);
+
+carousel.addEventListener(
+  "touchmove",
+  (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+  },
+  { passive: false }
+);
+
+carousel.addEventListener(
+  "touchend",
+  (e) => {
+    if (!isDragging) return;
+    const touchEndX = e.changedTouches[0].clientX;
+    const diffX = touchStartX - touchEndX;
+
+    if (Math.abs(diffX) > 50) {
+      if (diffX > 0) {
+        handleUserInteraction("right");
+      } else {
+        handleUserInteraction("left");
+      }
+    }
+
+    isDragging = false;
+    startAutoScroll();
+  },
+  { passive: true }
+);
