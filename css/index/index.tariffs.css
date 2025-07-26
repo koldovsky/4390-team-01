@@ -11,6 +11,13 @@
       /*розташування колонкою*/
       align-items: center;
       /*по центру*/
+      .tariffs__clock {
+        font-size: 1.2rem;
+        color: var(--accent-color);
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
 
       .tariffs__title {
         font-size: 0.6875rem;
@@ -20,13 +27,48 @@
       .tariffs__subtitle {
         font-size: 2.125rem;
       }
-      .tariffs__subtitle-second{
+      .tariffs__subtitle-second {
         font-family: "Lato", sans-serif;
       }
     }
 
     .tariffs__class {
+      .tariffs__menu{
+        display : flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: auto;
+        /*вирівнювання по центру*/
+        gap: 20px;
+        /*відстань між елементами*/
+        .tariffs__group-link {
+          font-size: 1.0625rem;
+          font-weight: bold;
+          /*Робить текст жирним.*/
+          color: var(--tariffs-text-color);
+          /*використання змінної яка містить білий текст*/
+          text-decoration: none;
+          /*прибрати підкреслння*/
+          padding: 15px 20px;
+          /*відступи*/
+        }
+        .tariffs__group-link.active {
+          color: var(--accent-color);
+          /*використання змінної яка містить колір акценту*/
+          text-decoration: underline;
+          /* додає підкреслення для активного посилання */
+        }
+        .tariffs__group-link:hover {
+          text-decoration: underline;
+          /* додає підкреслення при наведенні */
+        }
+      }
       .tariffs__group {
+        display: block;
+
+        .tariffs__group--hidden {
+          display: none;
+        }
         font-family: "Nunito", sans-serif;
         .tariffs__group-title {
           display: inline;
@@ -46,6 +88,9 @@
             /* додає підкреслення при наведенні */
           }
         }
+      }
+      .tariffs__group--hidden {
+        display: none;
       }
 
       @media (min-width: 478px) {
@@ -163,4 +208,5 @@
       }
     }
   }
+  
 }
