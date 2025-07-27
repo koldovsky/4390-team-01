@@ -42,13 +42,21 @@
       padding: 10px;
       background-color: var(--color-white);
     }
+    .how-it-works__step--hovered {
+      background-color: var(--color-welcom);
+      transition: background-color 0.3s ease;
+    }
+    .how-it-works__step--hovered .how-it-works__icon {
+      border:solid var(--color-border-active);
+      border-width: 6px;
+      transition: border-color 0.3s ease;
+    }
     .how-it-works__contact {
       padding: 10px;
       grid-column: 1 / -1;
       justify-self: center;
       background-color: var(--color-white);
     }
-
     .how-it-works__icon {
       border-color: var(--accent-color);
       border-width: 8px;
@@ -59,12 +67,29 @@
       margin: 0 auto;
       display: block;
     }
-
+     .how-it-works__contact__icon {
+      border-color: var(--accent-color);
+      border-width: 8px;
+      border-style: solid;
+      border-radius: 70%;
+      height: 150px;
+      width: 150px;
+      margin: 0 auto;
+      display: block;
+    }
+    .how-it-works__contact--hovered {
+      background-color: var(--color-welcom);
+      transition: background-color 0.3s ease;
+    }
+    .how-it-works__contact--hovered .how-it-works__contact__icon {
+      border:solid var(--color-border-active);
+      border-width: 6px;
+      transition: border-color 0.3s ease;
+    }
     .how-it-works__step-title {
       padding: 3px;
       color: var(--color-welcome-accent);
     }
-
     .how-it-works__step-text {
       padding: 3px;
       color: var(--color-text-maine);
