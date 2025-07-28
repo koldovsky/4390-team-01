@@ -5,7 +5,7 @@
 .header-nav__top {
     width: 100%;
     height: fit-content;
-    background-color: #f5f5f5;
+    background-color: var(--background-color);
 }
 
 .header-nav__container {
@@ -19,7 +19,7 @@
 }
 
 .header-nav__contacts-text {
-    color: #6748cd;
+    color:var(--color-primary);
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -27,7 +27,7 @@
 }
 
 .header-nav__phone-number {
-    color: #5d5d5d;
+    color: var(--bace-color);
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -44,7 +44,7 @@
 .header-nav__social-icons a>svg {
     width: 24px;
     height: 24px;
-    fill: #6748cd;
+    fill: var(--color-welcome-accent);
 }
 
 .header-nav__logo img{
@@ -65,7 +65,7 @@
 
 .header-nav__links-item {
     text-decoration: none;
-    color: #5d5d5d;
+    color: var(--bace-color);
 }
 #menu, .header-nav__logo label{
     display: none;
@@ -75,7 +75,7 @@
         flex-direction: column-reverse;
     }
     .header-nav__top{
-        background-color: #fff;
+        background-color: var(--tariffs-text-color);
     }
     .bottom__container{
         padding: 25px 32px;
