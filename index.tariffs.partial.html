@@ -1,6 +1,7 @@
 <section class="tariffs">
   <div class="tariffs__part container">
     <div class="tariffs__upper-part">
+      <p class="tariffs__clock" id="clock"></p>
       <h2 class="tariffs__title">Tariffs</h2>
       <p class="tariffs__subtitle">
         <b>Most Flexible Payment Plans</b>
@@ -22,11 +23,13 @@
       </p>
     </div>
     <div class="tariffs__class">
+      <div class="tariffs__menu">
+        <a href="#economy" class="tariffs__group-link">Economy Class</a>
+        <a href="#business" class="tariffs__group-link">Business Class</a>
+        <a href="#comfort" class="tariffs__group-link">Comfort Class</a>
+      </div>
       <!--Econom Class-->
       <div class="tariffs__group" id="economy" data-class="economy">
-        <h3 class="tariffs__group-title">
-          <a href="#economy" class="tariffs__group-link">Economy Class</a>
-        </h3>
         <div class="tariffs__plans">
           <article class="tariffs__card tariffs__card--economy">
             <h4 class="tariffs__type">Basic</h4>
@@ -119,10 +122,12 @@
         </div>
       </div>
       <!--Bisness Class-->
-      <div class="tariffs__group" id="business" data-class="business">
-        <h3 class="tariffs__group-title">
-          <a href="#business" class="tariffs__group-link">Business Class</a>
-        </h3>
+      <div
+        class="tariffs__group tariffs__group--hidden"
+        id="business"
+        data-class="business"
+      >
+        <h3 class="tariffs__group-title"></h3>
         <div class="tariffs__plans">
           <article class="tariffs__card tariffs__card--business">
             <h4 class="tariffs__type">Basic</h4>
@@ -214,10 +219,11 @@
       </div>
 
       <!--Comfort Class-->
-      <div class="tariffs__group" id="comfort" data-class="comfort">
-        <h3 class="tariffs__group-title">
-          <a href="#comfort" class="tariffs__group-link">Comfort Class</a>
-        </h3>
+      <div
+        class="tariffs__group tariffs__group--hidden"
+        id="comfort"
+        data-class="comfort"
+      >
         <div class="tariffs__plans">
           <article class="tariffs__card tariffs__card--comfort">
             <h4 class="tariffs__type">Basic</h4>
