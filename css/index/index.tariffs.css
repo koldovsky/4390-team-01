@@ -26,6 +26,7 @@
 
       .tariffs__subtitle {
         font-size: 2.125rem;
+        font-family: "Nunito", sans-serif;
       }
       .tariffs__subtitle-second {
         font-family: "Lato", sans-serif;
@@ -66,10 +67,10 @@
       .tariffs__group {
         display: block;
 
+        font-family: "Nunito", sans-serif;
         .tariffs__group--hidden {
           display: none;
-        }
-        font-family: "Nunito", sans-serif;
+        } 
         .tariffs__group-title {
           display: inline;
 
@@ -120,6 +121,7 @@
       .tariffs__card {
         display: flex;
         flex-direction: column;
+        font-family: "Lato", sans-serif;
         /*  елементи в колонку */
         justify-content: space-between;
         /* рівномірно розподілити */
@@ -146,6 +148,7 @@
         }
 
         .tariffs__price {
+          font-family: "Nunito", sans-serif;
           font-size: 2.125rem;
           font-weight: bold;
           /*Робить текст жирним.*/
@@ -162,7 +165,7 @@
         .tariffs__divider {
           height: 2px;
           width: 30px;
-          background: #fff;
+          background-color: var(--tariffs-text-color);
           margin: 10px 0;
           /*відступи зверху та знизу*/
         }
@@ -205,6 +208,15 @@
           cursor: pointer;
           /* залишає курсор pointer при наведенні */
         }
+      }
+      .tariffs__card:hover {
+        background: url(../../img/tariffs/orange-fon-hover.jpg) no-repeat center /
+          cover;
+          background-color: var(--accent-color);
+          
+        /* змінює фон при наведенні */
+        background-position: 50% 18%;
+        /* зміщене розташування */
       }
     }
   }
