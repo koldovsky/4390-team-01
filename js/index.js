@@ -1,6 +1,7 @@
 function init() {
     import('./index.tariffs.js');
     import('./index.available-cars.js');
+    import('./index.clients.js');    
     import('./index.how-it-works.js');
 }
 
