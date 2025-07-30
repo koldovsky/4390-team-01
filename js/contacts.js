@@ -1,5 +1,7 @@
 function init() {
     import('./contacts.contact-us.js');
+    import('./contacts.contact-submit-form.js');
+    import('./contacts.contact-form-check.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
