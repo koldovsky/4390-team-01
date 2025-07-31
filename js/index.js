@@ -1,7 +1,6 @@
+
 function init() {
     import('./index.tariffs.js');
-    import('./index.available-cars.js');
-    import('./index.how-it-works.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
