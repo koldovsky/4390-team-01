@@ -1,10 +1,7 @@
-
 function init() {
-    import('./index.tariffs.js');
-    import('./index.available-cars.js');
-    import('./index.clients.js');    
-    import('./index.how-it-works.js');
-    import('./index.header-hero.js')
+    import('./contacts.contact-us.js');
+    import('./contacts.contact-submit-form.js');
+    import('./contacts.contact-form-check.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
