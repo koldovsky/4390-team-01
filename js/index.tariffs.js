@@ -12,11 +12,6 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock(); 
 
-
-
-const tariffsTitle = document.querySelector('.tariffs__title');
-tariffsTitle.style.color = 'blue';
-
 const groupLinks = document.querySelectorAll('.tariffs__group-link');
 const groups = document.querySelectorAll('.tariffs__group');
 
