@@ -45,6 +45,7 @@
         .tariffs__group-link {
           font-size: 1.0625rem;
           font-weight: bold;
+          font-family: "Lato", sans-serif;
           /*Робить текст жирним.*/
           color: var(--tariffs-text-color);
           /*використання змінної яка містить білий текст*/
