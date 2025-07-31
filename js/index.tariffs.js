@@ -1,32 +1,31 @@
-function updateClock() {
-  const clockElement = document.getElementById('clock');
-  const now = new Date();
+const groupLinks = document.querySelectorAll(".tariffs__group-link");
+  const groups = document.querySelectorAll(".tariffs__group");
 
-  const hours = String(now.getHours()).padStart(2, '0');
-  const minutes = String(now.getMinutes()).padStart(2, '0');
-  const seconds = String(now.getSeconds()).padStart(2, '0');
+  // Встановити початковий стан - показати перший тариф, приховати інші
+  groups.forEach((group, index) => {
+    group.classList.toggle("tariffs__group--hidden", index !== 0);
+  });
 
-  clockElement.textContent = `${hours}:${minutes}:${seconds}`;
-}
+  // Додати активний клас першому посиланню
+  groupLinks.forEach((link, index) => {
+    if (index === 0) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
 
-setInterval(updateClock, 1000);
-updateClock(); 
+  groupLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
 
-const groupLinks = document.querySelectorAll('.tariffs__group-link');
-const groups = document.querySelectorAll('.tariffs__group');
+      const targetId = link.getAttribute("href").substring(1);
 
-groupLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
+      groups.forEach((group) => {
+        group.classList.toggle("tariffs__group--hidden", group.id !== targetId);
+      });
 
-    const targetId = link.getAttribute('href').substring(1);
-
-    groups.forEach(group => {
-      if (group.id === targetId) {
-        group.classList.remove('tariffs__group--hidden');
-      } else {
-        group.classList.add('tariffs__group--hidden');
-      }
+      groupLinks.forEach((l) => l.classList.remove("active"));
+      link.classList.add("active");
     });
   });
-});
