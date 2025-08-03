@@ -11,18 +11,76 @@
       /*розташування колонкою*/
       align-items: center;
       /*по центру*/
+      .tariffs__clock {
+        font-size: 1.2rem;
+        color: var(--accent-color);
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
 
       .tariffs__title {
         font-size: 0.6875rem;
+        font-family: "Lato", sans-serif;
       }
 
       .tariffs__subtitle {
         font-size: 2.125rem;
+        font-family: "Nunito", sans-serif;
+      }
+      .tariffs__subtitle-second {
+        font-family: "Lato", sans-serif;
       }
     }
 
     .tariffs__class {
+      .tariffs__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: auto;
+        /*вирівнювання по центру*/
+        gap: 20px;
+        /*відстань між елементами*/
+        margin-top: 24px;
+        .tariffs__group-link {
+          font-size: 1.0625rem;
+          font-weight: bold;
+          font-family: "Lato", sans-serif;
+          /*Робить текст жирним.*/
+          color: var(--tariffs-text-color);
+          /*використання змінної яка містить білий текст*/
+          text-decoration: none;
+          /*прибрати підкреслння*/
+          padding: 15px 20px;
+          /*відступи*/
+        }
+        .tariffs__group-link.active {
+          color: var(--accent-color);
+          /*використання змінної яка містить колір акценту*/
+          text-decoration: underline;
+          /* додає підкреслення для активного посилання */
+        }
+        .tariffs__group-link:hover {
+          text-decoration: underline;
+          /* додає підкреслення при наведенні */
+        }
+      }
+      .tariffs__svg-placeholder {
+        text-align: center;
+        margin: 8px 0 16px;
+      }
+      .tariffs__svg-placeholder img {
+        width: 150px;
+        height: auto;
+      }
       .tariffs__group {
+        display: block;
+
+        font-family: "Nunito", sans-serif;
+        .tariffs__group--hidden {
+          display: none;
+        }
         .tariffs__group-title {
           display: inline;
 
@@ -41,6 +99,9 @@
             /* додає підкреслення при наведенні */
           }
         }
+      }
+      .tariffs__group--hidden {
+        display: none;
       }
 
       @media (min-width: 478px) {
@@ -70,6 +131,7 @@
       .tariffs__card {
         display: flex;
         flex-direction: column;
+        font-family: "Lato", sans-serif;
         /*  елементи в колонку */
         justify-content: space-between;
         /* рівномірно розподілити */
@@ -96,6 +158,7 @@
         }
 
         .tariffs__price {
+          font-family: "Nunito", sans-serif;
           font-size: 2.125rem;
           font-weight: bold;
           /*Робить текст жирним.*/
@@ -112,7 +175,7 @@
         .tariffs__divider {
           height: 2px;
           width: 30px;
-          background: #fff;
+          background-color: var(--tariffs-text-color);
           margin: 10px 0;
           /*відступи зверху та знизу*/
         }
@@ -155,6 +218,15 @@
           cursor: pointer;
           /* залишає курсор pointer при наведенні */
         }
+      }
+      .tariffs__card:hover {
+        background: url(../../img/tariffs/orange-fon-hover.jpg) no-repeat center /
+          cover;
+        background-color: var(--accent-color);
+
+        /* змінює фон при наведенні */
+        background-position: 50% 18%;
+        /* зміщене розташування */
       }
     }
   }
