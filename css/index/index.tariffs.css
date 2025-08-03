@@ -65,13 +65,21 @@
           /* додає підкреслення при наведенні */
         }
       }
+      .tariffs__svg-placeholder {
+        text-align: center;
+        margin: 8px 0 16px;
+      }
+      .tariffs__svg-placeholder img {
+        width: 150px;
+        height: auto;
+      }
       .tariffs__group {
         display: block;
 
         font-family: "Nunito", sans-serif;
         .tariffs__group--hidden {
           display: none;
-        } 
+        }
         .tariffs__group-title {
           display: inline;
 
@@ -213,8 +221,8 @@
       .tariffs__card:hover {
         background: url(../../img/tariffs/orange-fon-hover.jpg) no-repeat center /
           cover;
-          background-color: var(--accent-color);
-          
+        background-color: var(--accent-color);
+
         /* змінює фон при наведенні */
         background-position: 50% 18%;
         /* зміщене розташування */
