@@ -32,11 +32,16 @@
 
 .download__text-block{
   width: 640px;
+  padding-left: 5em;
 }
 
-.download__link-icons{
+.download__stores{
   display: flex;
   flex-direction: row;
+}
+
+#btn-google-play{
+  padding-left: 2em;
 }
 
 .download__description{
@@ -49,7 +54,6 @@
 .download__feature{
   display: flex;
   align-items: center;
-  gap: 40px;
 }
 
 .download__feature-text-block{
