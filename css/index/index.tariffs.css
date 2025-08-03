@@ -42,6 +42,7 @@
         /*вирівнювання по центру*/
         gap: 20px;
         /*відстань між елементами*/
+        margin-top: 24px;
         .tariffs__group-link {
           font-size: 1.0625rem;
           font-weight: bold;
