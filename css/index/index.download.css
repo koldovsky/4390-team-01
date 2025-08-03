@@ -1,27 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-
-:root {
-  font-family: "Nunito Sans", sans-serif;
-}
-
-.app-download {
-  background-color: #f9f9f9;
-  padding: 60px 20px;
-}
-
-.app-download__container {
-  max-width: 1200px;
-  margin: 0 auto;
+.download{
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em;
+  font-family: 'Nunito Sans';
+}
+
+.download__title{
+  font-size: 2.5em;
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+
+.download__subtitle{
+  font-size: 0.8em;
+  font-weight: 600;
+  color: rgb(112, 112, 112);
+  margin-bottom: 1.5em;
+}
+
+.download__wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+}
+
+.download__image{
+  border-radius: 2em;
+  outline: 0.5em solid rgb(224, 96, 82);
+}
+
+.download__text-block{
+  width: 640px;
+}
+
+.download__link-icons{
+  display: flex;
+  flex-direction: row;
+}
+
+.download__description{
+  padding: 1em 0 1em 0;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: rgb(112, 112, 112);
+}
+
+.download__feature{
+  display: flex;
   align-items: center;
-  gap: 40px;
+  margin-bottom: 1em;
 }
 
-h1, h3 {
-  color:black
-}
-
-h2 {
-  color:#707070
+.download__feature-text-block{
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0 0 1em;
 }
