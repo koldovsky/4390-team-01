@@ -23,8 +23,8 @@
 
 .download__image {
   max-width: 100%;
-  width: 324px;
-  height: 641px;
+  width: 275px;
+  height: auto;
   border-radius: 40px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
@@ -75,13 +75,20 @@
   align-items: flex-start;
   gap: 16px;
   width: 70px;
-  height: 70px;
+  height: auto;
 }
 
 .download__icon {
   max-width: 70px;
   flex-shrink: 0;
-  height: 70px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.download__text-block {
+ flex: 1;
+ min-width: 1;
+ overflow: break-word;
 }
 
 .download__subtitle {
@@ -89,8 +96,9 @@
   font-weight: 600;
   margin: 0 0 10px;
   color: #333235;
-  width: 86px;
-  height: 31px;
+  max-width: 86px;
+  width: 100%;
+  height: auto;
 }
 
 .download__content-one {
@@ -121,7 +129,8 @@
   display: flex;
   gap: 16px;
   margin-top: 20px;
-  height: 52px;
+  max-height: 52px;
+  height: 100%;
   width: auto;
 }
 
@@ -152,4 +161,90 @@
 
 .download__content--final {
   margin-bottom: 20px;
+}
+ 
+@media (max-width: 480px) {
+  .download__wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  @media (max-width: 480px) {
+   .download__icon {
+   max-width: 50px;
+   flex-shrink: 0;
+   height: auto;
+   margin-bottom: 10px;
+  }
+
+  @media (max-width: 480px) { 
+   .download__left,
+   .download__right {
+     flex: 1 1 100%;
+     max-width: 100%;
+   }
+  }
+
+  @media (max-width: 480px) {
+   .download__right {
+     max-width: 382px;
+     max-height: 100%;
+   }
+  }
+
+  .download__image {
+    width: 100%;
+    height: auto;
+    max-width: 224px;
+  }
+
+  .download__description,
+  .download__content-one,
+  .download__content-two,
+  .download__content-three,
+  .download__content {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .download__buttons {
+    display: flex;
+    align-items: center;
+    max-width: 135px;
+    height: 42px
+  }
+
+  @media (max-width: 480px) {
+   .download__store-btn {
+     max-width: 135px;
+     height: 42px;
+   }
+  }
+
+  .download__description,
+  .download__content-one,
+  .download__content-two,
+  .download__content-three,
+  .download__content,
+  h3 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .download__feature {
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
+
+  .download__icon {
+    margin-bottom: 10px;
+    align-items: left;
+  }
+
+  .download__text-block {
+    width: 100%
+  }
 }
