@@ -39,9 +39,11 @@
   --color-white: #fff;
 
   /* Contacts color */
-  --frame-color__contacts: rgba(168, 168, 168, 0.3);
+  --frame-color__contacts: rgba(168, 168, 168, 0.8);
+  --border-color__contacts: rgba(168, 168, 168, 0.2);
   --description-color__contacts: #a8a8a8;
   --action-color__contacts: #6748cd;
+  --hover-color__contacts: #3b3bcf;
   
   /* Available-cars color */
   --car-section-name-color: #a8a8a8;
