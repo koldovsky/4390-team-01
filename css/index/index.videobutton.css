@@ -1,19 +1,29 @@
 .about-videobutton {
-    margin-top: 150px;
-    background-image: url("../../img/button/bg-pic.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* margin: auto; */
+  background-image: url("../../img/button/bg-pic.png");
+  /*background-size: cover; /* Зображення розтягується, щоб покрити весь блок */
+  background-position: center ; /* Центрує зображення */
+  background-repeat: no-repeat; /* Забороняє повторення зображення */
+  width: 100vw; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   
     .about-videobutton__container {
+      background-color: rgba(7, 3, 3, 0.5); /* Світло-сірий напівпрозорий фон */
+      color: white;
+      padding: 20px; /* Відступи всередині контейнера */
+      border-radius: 15px; /* Згладжені кути */
+     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь для об'єму */
       display: flex;
+      flex-direction: column; /* Елементи розташовуються вертикально */
+      justify-content: center; /* Вирівнювання по вертикалі */
+      align-items: center; /* Вирівнювання по горизонталі */
+      width: 50%; /* Ширина контейнера */
+      margin: 0 auto; 
   
-      .about-videobutton__image {
-        @media (min-width: 768px) {
-          flex: 1;
-        }
-      }
+      
   
       .about-videobutton__content {
         /* font-size: 5vw; */
@@ -44,35 +54,38 @@
           /* max-width: 300px; */
         }
   
-        .about-videobutton__features {
-          display: flex;
-          flex-direction: column;
-          /* вертикальное расположение */
-          gap: 24px;
-          /* расстояние между элементами, можно изменить */
-          list-style: none;
-          /* убирает маркеры списка */
-          padding: 25px;
-          margin: 0;
+        
   
-          .about-udrive__feature-item {
-            display: flex;
-            align-items: center;
-            font-size: 14px;
-            color: var(--color-welcome-text2);
-            font-family: "Lato", sans-serif;
-            gap: 10px;
-            /* расстояние между иконкой и текстом */
-  
-            /* выравнивание по вертикали */
+        .about-videobutton__video {
+
+          border: none;
+          background-color: inherit;
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+          display: inline-block;
+          color: orange;
+            
+          .about-videobutton__videobutton {
+            border: none;
+          background-color: inherit;
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+          display: inline-block;
+          color: orange;
+            
+          
+            .about-videobutton__videoimage {
+              border: none;
+          background-color: inherit;
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+          display: inline-block;
+          color: orange;
+           
           }
-        }
-  
-        .about-videobutton__text {
-          font-family: "Lato", sans-serif;
-          font-size: 17px;
-          color: var(--color-welcome-text2);
-          /* max-width: 300px; */
         }
   
         
