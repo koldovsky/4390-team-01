@@ -1,40 +1,32 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const menuCheckbox = document.getElementById('menu');
+function updateHeaderNavState() {
+  const menuCheckbox = document.querySelector('#menu');
   const headerNav = document.querySelector('.header-nav');
-  const navLinks = document.querySelectorAll('.header-nav__links-item');
+  const body = document.body;
 
-  function isMobile() {
-    return window.innerWidth < 992;
+  if (!menuCheckbox || !headerNav) return;
+
+  if (window.innerWidth < 992 && menuCheckbox.checked) {
+    headerNav.style.height = '100vh'; 
+    body.style.overflow = 'hidden';   
+  } else {
+    headerNav.style.height = '0';    
+    body.style.overflow = '';         
   }
+}
 
-  function setHeaderNavHeight() {
-    if (menuCheckbox && headerNav) {
-      if (menuCheckbox.checked && isMobile()) {
-        headerNav.style.height = '100vh';
-        document.body.style.overflow = 'hidden';
-      } else {
-        headerNav.style.height = '';
-        document.body.style.overflow = '';
-      }
+
+document.querySelector('#menu')?.addEventListener('change', updateHeaderNavState);
+window.addEventListener('resize', updateHeaderNavState);
+window.addEventListener('DOMContentLoaded', updateHeaderNavState);
+
+document.querySelectorAll('.header-nav__links-item').forEach(link => {
+  link.addEventListener('click', () => {
+    const menuCheckbox = document.querySelector('#menu');
+    const body = document.body;
+    if (menuCheckbox) {
+      menuCheckbox.checked = false;
+      body.style.overflow = '';
+      updateHeaderNavState();
     }
-  }
-
-  if (menuCheckbox) {
-    menuCheckbox.addEventListener('change', setHeaderNavHeight);
-  }
-
-  navLinks.forEach(function(link) {
-    link.addEventListener('click', function() {
-      if (menuCheckbox && menuCheckbox.checked && isMobile()) {
-        menuCheckbox.checked = false;
-        setHeaderNavHeight();
-      }
-    });
   });
-
-  window.addEventListener('resize', function() {
-    setHeaderNavHeight();
-  });
-
-  setHeaderNavHeight();
 });
