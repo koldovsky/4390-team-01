@@ -9,7 +9,7 @@ function updateHeaderNavState() {
     headerNav.style.height = '100vh'; 
     body.style.overflow = 'hidden';   
   } else {
-    headerNav.style.height = '0';    
+    headerNav.style.height = '';    
     body.style.overflow = '';         
   }
 }
