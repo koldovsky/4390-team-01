@@ -6,7 +6,8 @@ function init() {
   import("./index.header-hero.js");
   import("./index.welcome-to-udrive-intro.js");
   import("./index.welcome-to-udrive-title.js");
-  import("./index.discount-timer.js")
+  import("./index.discount-timer.js");
+  import("./index.header-nav.js")
 }
 
 const totalPartials = document.querySelectorAll(
