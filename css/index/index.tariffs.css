@@ -20,6 +20,8 @@
       }
 
       .tariffs__title {
+        font-size: 2.5rem;
+        font-weight: bold;
         font-size: 0.6875rem;
         font-family: "Lato", sans-serif;
       }
@@ -42,9 +44,11 @@
         /*вирівнювання по центру*/
         gap: 20px;
         /*відстань між елементами*/
+        margin-top: 24px;
         .tariffs__group-link {
           font-size: 1.0625rem;
           font-weight: bold;
+          font-family: "Lato", sans-serif;
           /*Робить текст жирним.*/
           color: var(--tariffs-text-color);
           /*використання змінної яка містить білий текст*/
@@ -64,13 +68,21 @@
           /* додає підкреслення при наведенні */
         }
       }
+      .tariffs__svg-placeholder {
+        text-align: center;
+        margin: 8px 0 16px;
+      }
+      .tariffs__svg-placeholder img {
+        width: 150px;
+        height: auto;
+      }
       .tariffs__group {
         display: block;
 
         font-family: "Nunito", sans-serif;
         .tariffs__group--hidden {
           display: none;
-        } 
+        }
         .tariffs__group-title {
           display: inline;
 
@@ -140,6 +152,7 @@
         /* відступи між елементами */
         box-sizing: border-box;
         height: 100%;
+        
 
         .tariffs__type {
           font-size: 1.0625rem;
@@ -210,10 +223,11 @@
         }
       }
       .tariffs__card:hover {
-        background: url(../../img/tariffs/orange-fon-hover.jpg) no-repeat center /
+        background: url(../../img/tariffs/orange-fon.jpg) no-repeat center /
           cover;
-          background-color: var(--accent-color);
-          
+        background-color: var(--accent-color);
+        transform: scale(1.05);
+
         /* змінює фон при наведенні */
         background-position: 50% 18%;
         /* зміщене розташування */

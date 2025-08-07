@@ -1,6 +1,6 @@
 .contact-form {
   margin-top: 60px;
-  border-top: 2px solid var(--frame-color__contacts);
+  border-top: 2px solid var(--border-color__contacts);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,21 +99,33 @@
     }
 
     .contact-form__button {
-      background-color: var(--action-color__contacts);
-      color: var(--tariffs-text-color);
+      background-color: var(--frame-color__contacts);
+      color: var(--color-white);
       padding: 0.8rem 1rem;
       border: none;
       border-radius: 0.5rem;
       font-size: 1rem;
-      cursor: pointer;
       margin-bottom: 1rem;
+      cursor: not-allowed;
 
-      &:focus {
-        outline: none;
-      }
+      &.active {
+        background-color: var(--frame-color__contacts);
+        background-color: var(--action-color__contacts);
+        color: var(--color-white);
+        padding: 0.8rem 1rem;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-bottom: 1rem;
 
-      &:hover {
-        background-color: #3b3bcf;
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          background-color: var(--hover-color__contacts);
+        }
       }
     }
   }

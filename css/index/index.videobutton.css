@@ -1,26 +1,28 @@
 .about-videobutton {
   background-image: url("../../img/button/bg-pic.png");
-  /*background-size: cover; /* Зображення розтягується, щоб покрити весь блок */
-  background-position: center ; /* Центрує зображення */
-  background-repeat: no-repeat; /* Забороняє повторення зображення */
+ 
+  background-position: center ; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
   width: 100vw; 
   height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
   
   
     .about-videobutton__container {
-      background-color: rgba(7, 3, 3, 0.5); /* Світло-сірий напівпрозорий фон */
+      background-color: rgba(7, 3, 3, 0.5); 
       color: white;
-      padding: 20px; /* Відступи всередині контейнера */
-      border-radius: 15px; /* Згладжені кути */
-     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь для об'єму */
+      padding: 20px; 
+      border-radius: 15px; 
+    
       display: flex;
-      flex-direction: column; /* Елементи розташовуються вертикально */
-      justify-content: center; /* Вирівнювання по вертикалі */
-      align-items: center; /* Вирівнювання по горизонталі */
-      width: 50%; /* Ширина контейнера */
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      width: 50%; 
       margin: 0 auto; 
   
       
@@ -37,20 +39,20 @@
         .about-videobutton__intro {
           font-size: 11px;
           font-family: "Lato", sans-serif;
-          color: var(--color-welcom);
+          color: white;
           padding-bottom: 25px;
         }
   
         .about-videobutton__title {
           font-size: 34px;
           font-family: "Nunito Sans", sans-serif;
-          color: var(--color-welcome-text3);
+          color: white;
         }
   
         .about-videobutton__description {
           font-family: "Lato", sans-serif;
           font-size: 19px;
-          color: var(--color-welcome-text2);
+          color: white;
           /* max-width: 300px; */
         }
   
@@ -67,6 +69,8 @@
           color: orange;
             
           .about-videobutton__videobutton {
+            font-family: "Lato", sans-serif;
+          font-size: 19px;
             border: none;
           background-color: inherit;
           padding: 14px 28px;
@@ -79,7 +83,8 @@
             .about-videobutton__videoimage {
               border: none;
           background-color: inherit;
-          padding: 14px 28px;
+          width: 60px; 
+          height: 60px;
           font-size: 16px;
           cursor: pointer;
           display: inline-block;
