@@ -13,8 +13,13 @@ function init() {
   import("./index.header-hero.js");
   import("./index.welcome-to-udrive-intro.js");
   import("./index.welcome-to-udrive-title.js");
+<<<<<<< HEAD
   import("./index.discount-timer.js")
 >>>>>>> f3f13ba71f87ed61d13759c700a5724f7352d22b
+=======
+  import("./index.discount-timer.js");
+  import("./index.header-nav.js");
+>>>>>>> c99806cbead25204e2f6c9d4f48eda51893a06fb
 }
 
 const totalPartials = document.querySelectorAll(
